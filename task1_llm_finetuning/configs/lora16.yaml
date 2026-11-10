@@ -1,0 +1,4 @@
+run_name: lora16
+method: lora
+lr: 2.0e-4
+lora: {r: 16, alpha: 32, dropout: 0.05, targets: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]}

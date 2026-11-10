@@ -1,0 +1,150 @@
+\documentclass{article}
+
+% ============================================================
+%  PACKAGE OPTIONS
+% ============================================================
+% \usepackage{neurips_2026}              % submission (anonymous)
+% \usepackage[preprint]{neurips_2026}    % preprint
+\usepackage[final]{neurips_2026}         % camera-ready / final
+
+% ---------------- standard packages ----------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{subcaption}
+\usepackage{siunitx}
+\usepackage{placeins}
+
+\captionsetup{font=footnotesize, skip=3pt}
+\setlength{\textfloatsep}{10pt plus 2pt minus 2pt}
+\setlength{\floatsep}{8pt plus 2pt minus 2pt}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+
+% ---------------- float placement (loosened to avoid big gaps) ----------------
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.8}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{3}
+\setcounter{totalnumber}{5}
+
+\makeatletter
+\def\@trackname{}
+\makeatother
+
+% ---------------- title / author ----------------
+\title{Your Report Title Here}
+
+\author{
+    Muhammad Aitasaam Rana \\
+    Roll Number: 28100374 \\
+    \texttt{28100374@lums.edu.pk} \\
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Write a short summary of the problem, what you did, and your main findings (150--250 words).
+
+Code for all experiments is available at:
+\url{https://github.com/your-username/your-repo}.
+\end{abstract}
+
+% ============================================================
+\section{Introduction}
+% ============================================================
+State the core question, motivation, and a brief overview of the tasks or experiments. Cite related work with \citep{key} or \citet{key}.
+
+% ============================================================
+\section{Experimental Setup / Methods}
+% ============================================================
+% ------------------------------------------------------------
+\subsection{Task 1}
+\label{sec:task1-protocol}
+% ------------------------------------------------------------
+
+\paragraph{Setup and models.}
+We fine-tune \texttt{Qwen3-0.6B} on $40{,}000$ MetaMathQA examples (an LLM-expanded version of GSM8K and MATH problems) and evaluate seven checkpoints: (1)~the untouched \textbf{Baseline}; (2)~\textbf{Full FT Midpoint} ($625$ updates, $20{,}000$ examples); (3)~\textbf{Full FT Full} ($1{,}250$ updates, 1 epoch); (4)~\textbf{Full FT + $L_2$-SP}, full fine-tuning with $L_2$-SP distance regularization; (5)~\textbf{LoRA-4} and (6)~\textbf{LoRA-16}, standard LoRA with rank $4$ and $16$; and (7)~\textbf{OPLoRA}, double-sided Orthogonal Projection LoRA (final checkpoint). Training sequences are capped at $2{,}048$ tokens without truncating target answers. To keep evaluation strictly zero-shot, any prompt shared by MetaMathQA and the GSM8K test set (after text normalization) is removed from training.
+
+\paragraph{Evaluation.}
+All models are evaluated zero-shot. \textbf{GSM8K} (math transfer) uses generation: the final numerical answer is parsed by regex, and unextractable outputs count as incorrect. Generating also lets us inspect response style and whether reasoning changes; the cap is $1{,}024$ new tokens, half the training cap. \textbf{HellaSwag} (commonsense) and \textbf{ARC-Easy} (science) use candidate likelihood, reporting raw (\texttt{acc}) and length-normalized (\texttt{acc\_norm}) accuracy. \textbf{BoolQ} (binary reading) also uses candidate likelihood; since yes/no options have equal token length, only raw accuracy is reported.
+
+\paragraph{Diagnostics.}
+\textbf{Activation probes} compare each method's hidden-layer activations against the baseline on $64$ fixed prompts ($32$ GSM8K test and $32$ HellaSwag validation samples, seed $6304$). A \textbf{qualitative non-math inspection} uses $24$ fixed prompts from \texttt{first\_plot\_questions.yaml} ($8$ core questions in plain, JSON, and template formats), reporting instruction compliance, coherence, answer style, and inappropriate content.
+
+\paragraph{Checkpointing.}
+To stay under Kaggle's $20$\,GB disk limit, we kept only the most recent recovery checkpoint on disk, overwriting older ones as training progressed. For the final step-$1{,}250$ checkpoint we saved only the model weights and dropped the optimizer state, since it is needed only to resume training, not for benchmark evaluation or diagnostic probes.
+
+\paragraph{Task 2: Name.}
+Method description.
+
+% ============================================================
+\section{Results}
+% ============================================================
+
+% ------------------------------------------------------------
+\subsection{Task 1: Name}
+\label{sec:task1-results}
+% ------------------------------------------------------------
+
+Discussion of results, referring to Table~\ref{tab:example} and Figure~\ref{fig:example}.
+
+
+% ------------------------------------------------------------
+\subsection{Task 2: Name}
+\label{sec:task2-results}
+% ------------------------------------------------------------
+
+Discussion of results.
+
+\FloatBarrier
+
+% ============================================================
+\section{Cross-task Discussion}
+% ============================================================
+
+\subsection{Theme 1}
+Synthesize findings across tasks.
+
+\subsection{Theme 2}
+Further synthesis.
+
+% ============================================================
+\section{Conclusion}
+% ============================================================
+Summarize findings, state limitations (training budget, dataset size, seeds), and suggest future work.
+
+% ============================================================
+%  REFERENCES
+% ============================================================
+% \nocite{*}   % uncomment to list every entry in references.bib
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+% ============================================================
+%  APPENDIX
+% ============================================================
+\newpage
+\appendix
+
+\section{Task 1: Supplementary Material}
+\label{app:task1}
+
+Additional tables and figures.
+
+\FloatBarrier
+
+\end{document}

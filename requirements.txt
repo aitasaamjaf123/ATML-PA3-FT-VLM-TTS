@@ -1,0 +1,19 @@
+# NOTE: on Kaggle do NOT reinstall torch; only add what's missing (see task1_llm_finetuning/README.md).
+torch
+transformers>=4.51
+accelerate
+datasets
+safetensors
+lm-eval
+numpy
+pandas
+pyarrow
+scipy
+scikit-learn
+matplotlib
+pyyaml
+packaging
+tqdm
+pillow
+pytest
+math-verify

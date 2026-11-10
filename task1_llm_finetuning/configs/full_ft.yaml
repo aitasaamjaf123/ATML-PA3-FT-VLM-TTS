@@ -1,0 +1,6 @@
+run_name: full_ft
+method: full_ft
+lr: 2.0e-5
+l2sp_lambda: 0.0
+save_weights_at: [625, 1250]     # midpoint + final weights (FP32) for eval/diagnostics
+keep_all_recovery: false         # Kaggle 20GB output cap: keep only the latest full-state recovery ckpt

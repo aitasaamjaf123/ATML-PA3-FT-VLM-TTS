@@ -1,0 +1,7 @@
+run_name: l2sp
+method: l2sp
+lr: 2.0e-5
+l2sp_lambda: 1.0e-3
+save_weights_at: [1250]
+keep_all_recovery: false
+l2sp_reference_device: cpu   # theta0 pinned on host (GPU is too full on 16GB cards); use 'cuda' if it fits

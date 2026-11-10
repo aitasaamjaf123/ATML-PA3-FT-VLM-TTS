@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Raw data & large artifacts (do NOT commit)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+task1_llm_finetuning/outputs/checkpoints/*
+task2_vlm_grounding/outputs/features/*
+task2_vlm_grounding/outputs/checkpoints/*
+!**/.gitkeep
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.ckpt
+
+# LaTeX build
+report/*.aux
+report/*.log
+report/*.out
+report/*.bbl
+report/*.blg
+
+# Misc
+.DS_Store
+wandb/
+.env
+
+# Task 1 run outputs & offline eval cache (never commit)
+task1_llm_finetuning/outputs/*
+data/hf_cache/
