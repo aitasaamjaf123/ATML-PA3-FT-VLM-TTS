@@ -1,0 +1,30 @@
+{
+  "num_examples": 40000,
+  "scanned_source_rows": 40002,
+  "last_source_index": 40001,
+  "excluded_counts_within_scanned": {
+    "too_long": 2
+  },
+  "max_len": 2048,
+  "model_tokenizer": "Qwen/Qwen3-0.6B",
+  "transformers_version": "5.22.2",
+  "train_file": "train_40k.jsonl.gz",
+  "train_file_sha256": "65c07887732e0a59222319035413877cc61a20c2251e01b1504f1fb33ee17496",
+  "tokens_sha256": "833c96cafc2ec01582580363e824e4fafcf22a816acb8ab7bbcf44ddd07ffe53",
+  "token_len_min": 31,
+  "token_len_median": 220,
+  "token_len_max": 1942,
+  "token_len_mean": 248.710575,
+  "type_counts": {
+    "MATH_AnsAug": 7580,
+    "GSM_Rephrased": 8044,
+    "GSM_SV": 4100,
+    "GSM_FOBAR": 4043,
+    "GSM_AnsAug": 8140,
+    "MATH_FOBAR": 1574,
+    "MATH_Rephrased": 5015,
+    "MATH_SV": 1504
+  },
+  "normalization": "NFKC, lowercase, non-alphanumeric->space, whitespace collapsed; query OR original_question matched against all 1,319 GSM8K test questions",
+  "length_rule": "len(prompt_ids)+len(response_ids)+<|im_end|> + 1 trailing newline <= max_len"
+}
