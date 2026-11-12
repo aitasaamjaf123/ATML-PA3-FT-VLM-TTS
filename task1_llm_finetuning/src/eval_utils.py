@@ -482,7 +482,7 @@ def load_qualitative_prompts(path) -> list:
             else:
                 raise ValueError(f"Unrecognised YAML list element {x!r}")
     else:
-        raise ValueError("Unrecognised YAML structure")
+        raise ValueError(f"Unrecognised YAML structure: top level is {type(data).__name__}, starts with {str(data)[:200]!r}")
     items.sort(key=lambda t: (t[0], FORMATS.index(t[1]) if t[1] in FORMATS else 9))
     rows = [dict(question_idx=q, format=f, prompt_id=f"q{q:02d}_{f}", prompt=p) for q, f, p in items]
     per_fmt = {f: sum(r["format"] == f for r in rows) for f in FORMATS}

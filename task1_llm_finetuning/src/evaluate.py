@@ -12,12 +12,15 @@ results_root/benchmarks/<condition>/
     first_prompt_<task>.txt      first rendered prompt (check the empty <think></think> block for GSM8K)
     timing.csv                   wall-clock per task
 """
+import os
+os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
 import argparse
 import json
 import time
 from pathlib import Path
 
 import pandas as pd
+import torch
 
 from .eval_utils import (ALL_CONDITIONS, SEED, Ctx, build_eval_model, free_gpu, load_tokenizer, patch_chat_template,
                          resolve_conditions, select_conditions)
@@ -83,6 +86,19 @@ def run_task(model, tok, task, bs, limit):
                            fewshot_random_seed=SEED)
 
 
+def run_task_safe(model, tok, task, bs, limit):
+    """Halve the batch size and retry on CUDA OOM (BoolQ passages are long and logits are 152k-wide)."""
+    while True:
+        try:
+            return run_task(model, tok, task, bs, limit)
+        except torch.cuda.OutOfMemoryError:
+            free_gpu()
+            if bs == "auto" or int(bs) <= 1:
+                raise
+            bs = max(1, int(bs) // 2)
+            print(f"[oom] {task}: retrying with batch size {bs}", flush=True)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--run_root")
@@ -114,7 +130,9 @@ def main():
         for task in todo:
             t0 = time.time()
             bs = a.bs_gen if task == "gsm8k_cot" else (a.bs_ll if a.bs_ll == "auto" else int(a.bs_ll))
-            res = run_task(model, tok, task, bs, a.limit)
+            if task == "boolq" and bs != "auto":
+                bs = min(bs, 8)  # long passages: batch 32 needs ~10 GB of logits on a 16 GB card
+            res = run_task_safe(model, tok, task, bs, a.limit)
             samples = res["samples"][task]
             score_rows(res["results"][task]).to_csv(out / f"scores_{task}.csv", index=False)
             (out / f"results_{task}.json").write_text(json.dumps(res["results"][task], indent=1, default=str))
