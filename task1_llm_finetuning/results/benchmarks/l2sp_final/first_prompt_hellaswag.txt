@@ -1,0 +1,1 @@
+[('Roof shingle removal: A man is sitting on a roof. He', ' is using wrap to wrap a pair of skis.'), ('Roof shingle removal: A man is sitting on a roof. He', ' is ripping level tiles off.'), ('Roof shingle removal: A man is sitting on a roof. He', " is holding a rubik's cube."), ('Roof shingle removal: A man is sitting on a roof. He', ' starts pulling up roofing on a roof.')]

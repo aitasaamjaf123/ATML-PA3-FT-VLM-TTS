@@ -79,9 +79,12 @@ def loglik_samples(samples) -> pd.DataFrame:
 def run_task(model, tok, task, bs, limit):
     from lm_eval import simple_evaluate
     from lm_eval.models.huggingface import HFLM
-    lm = HFLM(pretrained=model, tokenizer=tok, batch_size=bs, max_gen_toks=GEN_CAP)
+    lm = HFLM(pretrained=model, tokenizer=tok, batch_size=bs)
+    # NOTE: HFLM.max_gen_toks is hard-coded to 256 and a constructor argument is silently ignored;
+    # the cap is only changed through gen_kwargs (merged into the task's generation_kwargs).
+    gen_kwargs = f"max_gen_toks={GEN_CAP}" if task == "gsm8k_cot" else None
     return simple_evaluate(model=lm, tasks=[task], num_fewshot=0, log_samples=True, limit=limit,
-                           apply_chat_template=(task == "gsm8k_cot"),
+                           apply_chat_template=(task == "gsm8k_cot"), gen_kwargs=gen_kwargs,
                            random_seed=SEED, numpy_random_seed=SEED, torch_random_seed=SEED,
                            fewshot_random_seed=SEED)
 
@@ -138,7 +141,13 @@ def main():
             (out / f"results_{task}.json").write_text(json.dumps(res["results"][task], indent=1, default=str))
             (out / f"first_prompt_{task}.txt").write_text(str(samples[0].get("arguments"))[:4000])
             if task == "gsm8k_cot":
-                gsm8k_samples(samples, tok).to_csv(out / f"samples_{task}.csv", index=False)
+                gdf = gsm8k_samples(samples, tok)
+                gdf.to_csv(out / f"samples_{task}.csv", index=False)
+                spike = gdf.n_gen_tokens.between(254, 258).mean()
+                print(f"[check] GSM8K generated tokens: max={gdf.n_gen_tokens.max()}, share at 254-258={spike:.3f}, "
+                      f"share >={TRUNC_TOKENS} (truncated at cap)={gdf.truncated.mean():.3f}", flush=True)
+                if gdf.n_gen_tokens.max() < 300 and spike > 0.05:
+                    print("!! WARNING: responses pile up at ~256 tokens: the 1,024-token cap is NOT in effect !!", flush=True)
             else:
                 loglik_samples(samples).to_csv(out / f"samples_{task}.csv.gz", index=False)
             secs = time.time() - t0

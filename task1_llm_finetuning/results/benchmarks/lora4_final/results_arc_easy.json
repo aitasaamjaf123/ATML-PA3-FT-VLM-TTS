@@ -1,0 +1,9 @@
+{
+ "name": "arc_easy",
+ "alias": "arc_easy",
+ "sample_len": 2376,
+ "acc,none": 0.6523569023569024,
+ "acc_stderr,none": 0.009771868846831044,
+ "acc_norm,none": 0.6321548821548821,
+ "acc_norm_stderr,none": 0.009894923464455033
+}

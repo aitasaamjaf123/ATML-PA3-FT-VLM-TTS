@@ -1,0 +1,5 @@
+condition,task,seconds,limit
+baseline,gsm8k_cot,551.3566789627075,
+baseline,hellaswag,483.0531406402588,
+baseline,boolq,97.55806136131287,
+baseline,arc_easy,61.12733268737793,

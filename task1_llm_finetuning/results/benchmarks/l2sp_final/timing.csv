@@ -1,0 +1,5 @@
+condition,task,seconds,limit
+l2sp_final,gsm8k_cot,497.2043340206146,
+l2sp_final,hellaswag,482.6684968471527,
+l2sp_final,boolq,98.08517098426819,
+l2sp_final,arc_easy,61.598079204559326,

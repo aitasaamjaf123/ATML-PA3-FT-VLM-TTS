@@ -11,7 +11,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from .eval_utils import ALL_CONDITIONS
+ALL_CONDITIONS = ["baseline", "full_ft_mid", "full_ft_final", "l2sp_final", "lora4_final", "lora16_final", "oplora16_final"]
 
 # column -> (task, metric, filter)
 COLS = {
