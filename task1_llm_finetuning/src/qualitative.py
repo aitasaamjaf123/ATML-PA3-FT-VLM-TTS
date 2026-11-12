@@ -44,10 +44,11 @@ def json_valid(text: str) -> bool:
 
 @torch.no_grad()
 def generate(model, tok, prompts, bs=8):
+    """prompts: list of (system_or_None, user_text)."""
     eos = set(int(x) for x in ([model.generation_config.eos_token_id] if isinstance(
         model.generation_config.eos_token_id, int) else (model.generation_config.eos_token_id or [])))
     eos.add(int(tok.eos_token_id))
-    texts = [chat_prompt(tok, p) for p in prompts]
+    texts = [chat_prompt(tok, u, s) for s, u in prompts]
     outs = []
     for i in range(0, len(texts), bs):
         enc = tok(texts[i:i + bs], return_tensors="pt", padding=True, add_special_tokens=False).to(DEVICE)
@@ -67,7 +68,8 @@ def collect(qdir: Path, prompts):
         raise SystemExit("nothing to collect")
     df = pd.concat(dfs, ignore_index=True)
     df["cond_order"] = df["condition"].map({c: i for i, c in enumerate(ALL_CONDITIONS)})
-    df = df.sort_values(["question_idx", "format", "cond_order"]).drop(columns="cond_order")
+    df["fmt_order"] = df["format"].map({"plain": 0, "json": 1, "template": 2})
+    df = df.sort_values(["question_idx", "fmt_order", "cond_order"]).drop(columns=["cond_order", "fmt_order"])
     df.to_csv(qdir / "responses_all.csv", index=False)
     last = max(p["question_idx"] for p in prompts)
     sub = df[df.question_idx.isin([0, last])].copy()
@@ -97,7 +99,8 @@ def main():
     prompts = load_qualitative_prompts(a.prompts)
     if a.dry_run:
         for p in prompts:
-            print(p["prompt_id"], "|", p["prompt"][:110].replace("\n", "\\n"))
+            print(f'{p["question_idx"]} {p["prompt_id"]:<32} sys={"yes" if p.get("system") else "no "} | '
+                  + p["prompt"][:70].replace("\n", "\\n"))
         return
     if a.collect:
         return collect(qdir, prompts)
@@ -112,7 +115,7 @@ def main():
             print(f"[skip] {c}")
             continue
         model = build_eval_model(c, paths.get(c), ctx)
-        outs = generate(model, tok, [p["prompt"] for p in prompts], a.bs)
+        outs = generate(model, tok, [(p.get("system"), p["prompt"]) for p in prompts], a.bs)
         with open(f, "w", encoding="utf-8") as fh:
             for p, o in zip(prompts, outs):
                 r = dict(condition=c, **p, **o)

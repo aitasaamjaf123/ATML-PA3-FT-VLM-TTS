@@ -117,6 +117,18 @@ def test_qualitative_parser(tmp_path):
         assert len(rows) == 24 and rows[0]["prompt_id"] == "q00_plain" and rows[-1]["question_idx"] == 7
 
 
+def test_qualitative_real_schema(tmp_path):
+    base = ["wish", "bored", "thoughts", "buck", "ruler", "dinner", "gender", "husband"]
+    items = [{"id": b, "paraphrases": [f"Q {b}"]} for b in base]
+    items += [{"id": b + "_json", "system": "JSON please", "paraphrases": [f"Q {b}"]} for b in base]
+    items += [{"id": b + "_template", "paraphrases": [f"Q {b}\n\nFill the template"]} for b in base]
+    (tmp_path / "q.yaml").write_text(yaml.safe_dump(items))
+    rows = load_qualitative_prompts(tmp_path / "q.yaml")
+    assert len(rows) == 24 and rows[0]["prompt_id"] == "wish" and rows[1]["prompt_id"] == "wish_json"
+    assert rows[1]["system"] == "JSON please" and rows[0]["system"] is None
+    assert rows[-1]["question_id"] == "husband" and rows[-1]["question_idx"] == 7
+
+
 def test_probe_ids(tmp_path):
     for obj in ({"gsm8k": [1, 2], "hellaswag": [3, 4]},
                 {"gsm8k_test_ids": ["gsm8k_test_1"], "hellaswag_val": [{"idx": 3}]},

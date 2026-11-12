@@ -95,9 +95,9 @@ def patch_chat_template(tok):
     return tok
 
 
-def chat_prompt(tok, user_text: str) -> str:
-    return tok.apply_chat_template([{"role": "user", "content": user_text}], tokenize=False,
-                                   add_generation_prompt=True, enable_thinking=False)
+def chat_prompt(tok, user_text: str, system: str = None) -> str:
+    msgs = ([{"role": "system", "content": system}] if system else []) + [{"role": "user", "content": user_text}]
+    return tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True, enable_thinking=False)
 
 
 # --------------------------------------------------------------------------- tensors on disk
@@ -451,10 +451,36 @@ def _text(x):
     raise ValueError(f"Cannot read a prompt string from {x!r}")
 
 
+def _load_id_schema(data) -> list:
+    """List of {id, paraphrases, [system]}: format from the id suffix (_json / _template / none = plain);
+    question_idx = position of the base id in the file's PLAIN-question order; JSON entries carry a system prompt."""
+    def split_id(i):
+        for suf, f in (("_json", "json"), ("_template", "template")):
+            if i.endswith(suf):
+                return i[:-len(suf)], f
+        return i, "plain"
+
+    parsed = [(*split_id(str(x["id"])), x) for x in data]
+    plain_order = [b for b, f, _ in parsed if f == "plain"]
+    rows = []
+    for base, fmt, x in parsed:
+        if base not in plain_order:
+            raise ValueError(f"{x['id']}: no plain question '{base}' in the file")
+        rows.append(dict(question_idx=plain_order.index(base), question_id=base, format=fmt,
+                         prompt_id=str(x["id"]), system=x.get("system"), prompt=_text(x["paraphrases"][0])))
+    rows.sort(key=lambda r: (r["question_idx"], FORMATS.index(r["format"])))
+    per_fmt = {f: sum(r["format"] == f for r in rows) for f in FORMATS}
+    if len(rows) != 24 or set(per_fmt.values()) != {8}:
+        print(f"[warn] expected 24 prompts (8 per format); parsed {len(rows)}: {per_fmt}")
+    return rows
+
+
 def load_qualitative_prompts(path) -> list:
     """-> list of dict(question_idx, format, prompt_id, prompt), sorted by (question_idx, format).
     Handles: {plain:[..], json:[..], template:[..]}; list of {plain,json,template}; list of {format,question|prompt}."""
     data = yaml.safe_load(open(path, encoding="utf-8"))
+    if isinstance(data, list) and data and all(isinstance(x, dict) and "id" in x and "paraphrases" in x for x in data):
+        return _load_id_schema(data)  # the course's first_plot_questions.yaml
     while isinstance(data, dict) and len(data) == 1 and str(next(iter(data))).lower() not in FORMATS \
             and isinstance(next(iter(data.values())), (dict, list)):
         data = next(iter(data.values()))
