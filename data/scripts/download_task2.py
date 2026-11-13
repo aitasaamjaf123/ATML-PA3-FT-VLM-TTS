@@ -21,7 +21,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT))
 
-COCO_ANN_ZIP = "https://images.cocodataset.org/annotations/annotations_trainval2014.zip"
+COCO_ANN_ZIP = "http://images.cocodataset.org/annotations/annotations_trainval2014.zip"
 COCO_MEMBERS = ["captions_train2014.json", "captions_val2014.json", "instances_train2014.json", "instances_val2014.json"]
 VQA_BASE = "https://s3.amazonaws.com/cvmlp/vqa/mscoco/vqa/"
 VQA_ZIPS = [
