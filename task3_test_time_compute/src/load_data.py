@@ -2,6 +2,7 @@
 correctness labels and rollout-level quality signals."""
 from __future__ import annotations
 
+import os
 import pickle
 import re
 from dataclasses import dataclass, field
@@ -73,11 +74,23 @@ def parse_readme_revision(text: str) -> Optional[str]:
     return h.group(1) if h else None
 
 
+def _walk_files(root, names=None):
+    """Yield files under `root` (symlinked directories ARE followed, unlike Path.rglob on Kaggle mounts).
+    `names`: optional set of lowercase file names to keep."""
+    root = str(root)
+    if not os.path.isdir(root):
+        return
+    for dirpath, _dirs, files in os.walk(root, followlinks=True):
+        for f in files:
+            if names is None or f.lower() in names:
+                yield Path(dirpath) / f
+
+
 def discover_model_dirs(data_root) -> Dict[str, Path]:
     """Find export folders under data_root. Folders with attention_metrics.parquet are the VLM / MathVista
     export; the other folder with generations.parquet is the LLM / MATH export."""
     out: Dict[str, Path] = {}
-    for gen in sorted(Path(data_root).rglob("generations.parquet")):
+    for gen in sorted(_walk_files(data_root, {"generations.parquet"})):
         d = gen.parent
         key = "mathvista" if (d / "attention_metrics.parquet").exists() else "math"
         out.setdefault(key, d)
@@ -85,11 +98,69 @@ def discover_model_dirs(data_root) -> Dict[str, Path]:
 
 
 def find_readme(data_root) -> Optional[Path]:
-    for name in ("README.MD", "README.md", "readme.md", "Readme.md"):
-        hits = list(Path(data_root).rglob(name))
-        if hits:
-            return sorted(hits, key=lambda p: len(p.parts))[0]
-    return None
+    hits = list(_walk_files(data_root, {"readme.md"}))
+    return sorted(hits, key=lambda p: (len(p.parts), str(p)))[0] if hits else None
+
+
+def tree(root, max_depth: int = 3, max_entries: int = 80) -> str:
+    """Compact directory listing (symlinks followed) to diagnose a missing dataset."""
+    root = str(root)
+    if not os.path.isdir(root):
+        return f"{root}: does not exist"
+    lines, base_depth = [], root.rstrip("/").count("/")
+    for dirpath, dirs, files in os.walk(root, followlinks=True):
+        depth = dirpath.rstrip("/").count("/") - base_depth
+        dirs.sort()
+        if depth >= max_depth:
+            dirs[:] = []
+        lines.append("  " * depth + (os.path.basename(dirpath) or dirpath) + "/")
+        for f in sorted(files)[:15]:
+            lines.append("  " * (depth + 1) + f)
+        if len(files) > 15:
+            lines.append("  " * (depth + 1) + f"... (+{len(files) - 15} files)")
+        if len(lines) >= max_entries:
+            lines.append("... (truncated)")
+            break
+    return "\n".join(lines)
+
+
+def extract_archives(root, dest) -> List[Path]:
+    """Extract every .zip / .tar(.gz) under root that contains generations.parquet into dest/<archive name>."""
+    import tarfile
+    import zipfile
+
+    done: List[Path] = []
+    for p in _walk_files(root):
+        low = p.name.lower()
+        try:
+            if low.endswith(".zip") and zipfile.is_zipfile(p):
+                with zipfile.ZipFile(p) as z:
+                    if any(n.lower().endswith("generations.parquet") for n in z.namelist()):
+                        out = Path(dest) / p.stem
+                        out.mkdir(parents=True, exist_ok=True)
+                        z.extractall(out)
+                        done.append(out)
+            elif low.endswith((".tar", ".tar.gz", ".tgz")) and tarfile.is_tarfile(p):
+                with tarfile.open(p) as t:
+                    if any(m.name.lower().endswith("generations.parquet") for m in t.getmembers()):
+                        out = Path(dest) / p.name.split(".")[0]
+                        out.mkdir(parents=True, exist_ok=True)
+                        t.extractall(out)
+                        done.append(out)
+        except Exception:
+            continue
+    return done
+
+
+def resolve_data_root(candidates, extract_to) -> Optional[Path]:
+    """First candidate root that contains generations.parquet exports; archives are extracted when needed."""
+    cands = [Path(c) for c in candidates if c and os.path.isdir(str(c))]
+    for c in cands:
+        if discover_model_dirs(c):
+            return c
+    for c in cands:
+        extract_archives(c, extract_to)
+    return Path(extract_to) if discover_model_dirs(extract_to) else None
 
 
 # --------------------------------------------------------------------------------------
