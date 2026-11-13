@@ -20,7 +20,8 @@ KEYS = ["dataset", "sample_id", "rollout_id"]
 COLUMN_CANDIDATES = {
     "text": ["text", "generated_text", "response", "output_text", "generation"],
     "token_ids": ["token_ids", "generated_token_ids", "output_token_ids", "gen_token_ids"],
-    "length": ["length", "num_tokens", "n_tokens", "num_generated_tokens", "generated_length", "output_length"],
+    "length": ["n_generated_text_tokens", "length", "num_tokens", "n_tokens", "n_generated_tokens", "num_generated_tokens",
+               "num_generated_text_tokens", "generated_length", "output_length"],
     "answer": ["extracted_answer", "pred_answer", "predicted_answer", "answer_extracted", "extracted", "pred", "prediction", "extracted_answers"],
     "gold": ["gold_answer", "gold", "ground_truth", "reference_answer", "answer_gold", "gt_answer", "target", "answer"],
     "logp": ["logp", "token_logp", "sampled_logp", "logprobs"],
@@ -29,8 +30,16 @@ COLUMN_CANDIDATES = {
     "prompt_attn": ["prompt_attn", "prompt_text_attn", "prompt_attention", "attn_prompt", "prompt", "prompt_text", "text_prompt_attn"],
     "gen_attn": ["gen_attn", "generated_attn", "generated_text_attn", "generated_attention", "attn_generated", "generated", "gen", "text_generated_attn"],
     "problem": ["problem", "question", "problem_text", "question_text"],
+    "truncated": ["hit_max_new_tokens", "truncated", "is_truncated", "hit_max_tokens"],
 }
-FUZZY = {"image_attn": ["image", "img"], "prompt_attn": ["prompt"], "gen_attn": ["gen"], "logp": ["logp"], "kl_u_p": ["kl"], "token_ids": ["token"]}
+FUZZY = {"image_attn": ["image", "img"], "prompt_attn": ["prompt"], "gen_attn": ["gen"], "logp": ["logp"], "kl_u_p": ["kl"],
+         "token_ids": ["token"], "length": ["n_generated", "num_generated"]}
+SEQ_ROLES = {"token_ids", "logp", "kl_u_p", "image_attn", "prompt_attn", "gen_attn"}   # per-token list columns
+
+
+def _is_seq_col(df: pd.DataFrame, c: str) -> bool:
+    s = df[c]
+    return len(s) > 0 and isinstance(s.iloc[0], (list, tuple, np.ndarray))
 
 
 class AlignmentError(AssertionError):
@@ -47,7 +56,7 @@ def resolve_column(df: pd.DataFrame, role: str, override: Optional[str] = None, 
         if c in cols:
             return c
     for kw in FUZZY.get(role, []):
-        hits = [c for c in cols if kw in c.lower()]
+        hits = [c for c in cols if kw in c.lower() and (role not in SEQ_ROLES or _is_seq_col(df, c))]
         if len(hits) == 1:
             return hits[0]
     if required:
@@ -183,6 +192,12 @@ def load_joined(model_dir, vision: bool, columns: Optional[dict] = None, keep_qi
     return join_frames(gen, prob, attn, vision, columns, keep_qids)
 
 
+def read_sample_ids(model_dir) -> List[str]:
+    """All question ids of an export (reads only the id column of generations.parquet)."""
+    s = pd.read_parquet(Path(model_dir) / "generations.parquet", columns=["sample_id"])["sample_id"]
+    return sorted(s.astype(str).unique())
+
+
 def join_frames(gen: pd.DataFrame, prob: pd.DataFrame, attn: Optional[pd.DataFrame], vision: bool,
                 columns: Optional[dict] = None, keep_qids: Optional[Iterable[str]] = None) -> pd.DataFrame:
     columns = columns or {}
@@ -198,6 +213,7 @@ def join_frames(gen: pd.DataFrame, prob: pd.DataFrame, attn: Optional[pd.DataFra
     gold_excl = KEYS + [answer_col]
     g_map["gold"] = resolve_column(gen, "gold", columns.get("gold"), exclude=gold_excl)
     g_map["problem"] = resolve_column(gen, "problem", columns.get("problem"), exclude=KEYS, required=False)
+    g_map["truncated"] = resolve_column(gen, "truncated", columns.get("truncated"), exclude=KEYS, required=False)
     p_map = {r: resolve_column(prob, r, columns.get(r), exclude=KEYS) for r in ("logp", "kl_u_p")}
     if g_map["token_ids"] is None:  # may live in the probability table
         g_map["token_ids"] = None
@@ -283,6 +299,7 @@ class QuestionData:
     raw_answers: Optional[List] = None
     rollout_ids: Optional[List] = None
     problem: Optional[str] = None
+    truncated: Optional[np.ndarray] = None   # [R] bool: generation hit max_new_tokens (from the export, if present)
 
     @property
     def n_rollouts(self) -> int:
@@ -347,6 +364,7 @@ def build_pool(df: pd.DataFrame, dataset: str, ctx, vision: bool, keep_text: boo
             texts=g["text"].astype(str).tolist() if keep_text else None,
             raw_answers=g["answer"].tolist(), rollout_ids=g["rollout_id"].tolist(),
             problem=None if problem is None or (isinstance(problem, float) and np.isnan(problem)) else str(problem),
+            truncated=g["truncated"].to_numpy(dtype=bool) if "truncated" in g.columns else None,
         )
     return Pool(dataset, vision, questions, getattr(ctx, "scorer_info", {}), alignment or {}, token_cap)
 
@@ -357,7 +375,7 @@ def describe_pool(pool: Pool) -> dict:
     corr = np.stack([q.correct for q in qs])
     gid = np.stack([q.gid for q in qs])
     T = np.stack([q.T for q in qs])
-    return {
+    out = {
         "dataset": pool.dataset,
         "n_questions": len(qs),
         "rollouts_per_question": int(corr.shape[1]),
@@ -369,6 +387,9 @@ def describe_pool(pool: Pool) -> dict:
         "mean_distinct_groups": float(np.mean([len(np.unique(q.gid)) for q in qs])),
         "scorer": pool.scorer,
     }
+    if all(q.truncated is not None for q in qs):
+        out["frac_hit_max_new_tokens"] = float(np.mean([q.truncated.mean() for q in qs]))
+    return out
 
 
 def save_pool(pool: Pool, path) -> None:

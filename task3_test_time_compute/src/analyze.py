@@ -96,21 +96,25 @@ def get_pool(cfg, ds: str, needed_ids: Optional[Sequence[str]] = None):
         raise FileNotFoundError(f"no export folder found for '{ds}' under {cfg['paths']['data_root']}: {info['dirs']}")
     dcfg = cfg["datasets"][ds]
     vision = bool(dcfg["vision"])
+    all_ids = LD.read_sample_ids(info["dirs"][ds])          # splits are defined over ALL ids, even in smoke mode
     with timed(log, f"[{ds}] load + join parquet"):
-        df = LD.load_joined(info["dirs"][ds], vision, dcfg.get("columns"))
+        df = LD.load_joined(info["dirs"][ds], vision, dcfg.get("columns"), keep_qids=needed_ids)
     with timed(log, f"[{ds}] alignment check"):
         report = LD.check_alignment(df, vision, strict=True, n_rollouts=cfg["n_rollouts"])
-    all_ids = sorted(df["qid"].unique())
-    if needed_ids is not None:
-        df = df[df["qid"].isin(set(needed_ids))]
     ctx = make_answer_ctx(cfg, ds)
     with timed(log, f"[{ds}] answer groups + signals ({df['qid'].nunique()} questions)"):
         pool = LD.build_pool(df, ds, ctx, vision, token_cap=cfg["token_cap"], alignment=report)
     return pool, all_ids
 
 
+def _strip_instruction(problem: str) -> str:
+    """The live prompt appends the think/boxed instruction itself; drop it if the stored question already has it."""
+    i = problem.find("Think step by step")
+    return problem[:i].rstrip() if i > 0 else problem
+
+
 def _problems_for(cfg, pool, qids) -> Dict[str, str]:
-    probs = {q: pool.questions[q].problem for q in qids if pool.questions[q].problem}
+    probs = {q: _strip_instruction(pool.questions[q].problem) for q in qids if pool.questions[q].problem}
     missing = [q for q in qids if q not in probs]
     if missing:
         p = _abs(cfg["paths"]["math_problems"])
@@ -122,7 +126,7 @@ def _problems_for(cfg, pool, qids) -> Dict[str, str]:
         for q in missing:
             if q not in extra:
                 raise KeyError(f"no problem text for sample_id {q} in {p}")
-            probs[q] = extra[q]
+            probs[q] = _strip_instruction(extra[q])
     return probs
 
 
@@ -159,9 +163,7 @@ def run_pipeline(cfg, stages: Sequence[str] = ALL_STAGES, smoke: Optional[bool] 
                 # Splits need ALL question ids, so read the id column first; then build the pool only for the
                 # questions that are needed (dev + held-out; a small subset in smoke mode).
                 info = locate_data(cfg)
-                ids_df = LD.load_joined(info["dirs"][ds], bool(cfg["datasets"][ds]["vision"]), cfg["datasets"][ds].get("columns"))
-                probe_ids = sorted(ids_df["qid"].unique())
-                del ids_df
+                probe_ids = LD.read_sample_ids(info["dirs"][ds])
                 sp0 = SP.make_splits(probe_ids, cfg["seed"], cfg["split"]["n_dev"], cfg["split"]["n_live"])
                 if smoke_mode:
                     sp0 = SP.smoke_subset(sp0, cfg["smoke"]["n_dev"], cfg["smoke"]["n_eval"], cfg["smoke"]["n_live"])
