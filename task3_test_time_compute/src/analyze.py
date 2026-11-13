@@ -340,7 +340,7 @@ def fig_accuracy(cfg, ds, fdir):
     axes[1].set_xlabel("mean generated tokens per question")
     for ax in axes:
         ax.set_ylabel("accuracy / coverage")
-    axes[0].legend(ncol=1, loc="lower right")
+    axes[1].legend(*axes[0].get_legend_handles_labels(), loc="center left", bbox_to_anchor=(1.02, 0.5))
     fig.suptitle(f"{cfg['datasets'][ds]['pretty']}: accuracy vs. candidates and generated-token cost (held-out)")
     savefig(fig, fdir / f"accuracy_vs_budget_{ds}")
 
@@ -500,7 +500,7 @@ def fig_live(cfg, fdir):
     x = np.arange(len(main))
     ax[0].bar(x, main.accuracy, color=PALETTE[:3], width=0.6)
     ax[0].errorbar(x, main.accuracy, yerr=[main.accuracy - main.acc_ci_low, main.acc_ci_high - main.accuracy], fmt="none", ecolor="#333333", lw=1)
-    ax[0].set_ylabel("accuracy (50 questions, 95% bootstrap CI)")
+    ax[0].set_ylabel(f"accuracy (n={int(main.n_questions.iloc[0])} questions, 95% bootstrap CI)")
     ax[1].bar(x, main.mean_input_tokens, color=PALETTE[5], width=0.6, label="input tokens")
     ax[1].bar(x, main.mean_output_tokens, bottom=main.mean_input_tokens, color=PALETTE[3], width=0.6, label="output tokens")
     ax[1].set_ylabel("mean tokens per question")

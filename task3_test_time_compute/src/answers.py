@@ -39,7 +39,7 @@ def extract_last_boxed(text: Optional[str]) -> Optional[str]:
     occurrence is unbalanced (e.g. truncated generation)."""
     if not text:
         return None
-    idx = max(text.rfind("\\boxed{"), text.rfind("\\fbox{"))
+    idx = text.rfind("\\boxed{")      # README.MD rule: the last literal \boxed{ (no \fbox, no numeric fallback)
     if idx < 0:
         return None
     start = text.index("{", idx)
@@ -51,7 +51,7 @@ def extract_last_boxed(text: Optional[str]) -> Optional[str]:
         elif ch == "}":
             depth -= 1
             if depth == 0:
-                return text[start + 1 : j].strip()
+                return text[start + 1 : j].strip() or None   # an empty box counts as no answer
     return None
 
 
