@@ -1,9 +1,12 @@
 import json
 from pathlib import Path
 
+import pytest
+
 NB = Path(__file__).resolve().parents[2] / "task2_kaggle_runner.ipynb"
 
 
+@pytest.mark.skipif(not NB.exists(), reason="notebook not present in this checkout")
 def test_notebook_is_valid_and_code_compiles():
     nb = json.loads(NB.read_text())
     assert nb["nbformat"] == 4
