@@ -52,7 +52,7 @@ live:
   revision: null                      # null -> parsed from README.MD (40-char commit hash)
   dtype: float16
   system_prompt: "You are a helpful assistant."
-  instruction: "Think step by step inside <think></think> tags, then give your final answer inside \\boxed{}."
+  instruction: "Think step by step inside <think> </think> tags, then give your final answer inside \\boxed{}."
   review_prompt: "Review the solution above. Identify and correct any errors; if it is correct, retain its answer. Give your final answer inside \\boxed{}."
   sampling: {temperature: 0.7, top_p: 0.8, top_k: 20, repetition_penalty: 1.0}
   single_max_new_tokens: 3072

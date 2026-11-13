@@ -14,11 +14,14 @@ import numpy as np
 import pandas as pd
 
 from common.io import append_jsonl, ensure_dir, load_jsonl, save_csv, save_json
-from common.logging_utils import gpu_info, package_versions
+from common.logging_utils import get_logger, gpu_info, package_versions
 from common.seed import derive_seed
 from common.stats import bootstrap_mean_ci
 from task3_test_time_compute.src import answers as A
 from task3_test_time_compute.src import selectors as SEL
+
+
+log = get_logger("task3")
 
 
 @dataclass
@@ -101,7 +104,7 @@ class HFBackend:
 
 # --------------------------------------------------------------------------------------
 def build_messages(problem: str, system_prompt: str, instruction: str) -> List[dict]:
-    return [{"role": "system", "content": system_prompt}, {"role": "user", "content": f"{problem}\n{instruction}"}]
+    return [{"role": "system", "content": system_prompt}, {"role": "user", "content": f"{problem}\n\n{instruction}"}]
 
 
 def refinement_messages(base: List[dict], initial_response: str, review_prompt: str) -> List[dict]:
@@ -120,6 +123,8 @@ def _call(backend, cache: Dict, jsonl_path: Path, qid: str, role: str, messages,
            "seconds": r.seconds, "peak_mem_mb": r.peak_mem_mb, "extracted": ans}
     append_jsonl(row, jsonl_path)
     cache[key] = row
+    log.info("[live] q=%s %-10s in=%d out=%d%s %.1fs", qid, role, r.input_tokens, r.output_tokens,
+             " (truncated)" if r.truncated else "", r.seconds)
     return row
 
 
