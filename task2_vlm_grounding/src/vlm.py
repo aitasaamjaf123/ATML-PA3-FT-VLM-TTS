@@ -30,9 +30,9 @@ def autocast_ctx(device: torch.device):
 
 def make_grad_scaler(device: torch.device):
     try:
-        return torch.amp.GradScaler("cuda", enabled=(device.type == "cuda"))
+        return torch.amp.GradScaler("cuda", init_scale=2.0 ** 10, enabled=(device.type == "cuda"))
     except (AttributeError, TypeError):  # older torch
-        return torch.cuda.amp.GradScaler(enabled=(device.type == "cuda"))
+        return torch.cuda.amp.GradScaler(init_scale=2.0 ** 10, enabled=(device.type == "cuda"))
 
 
 class PromptBuilder:
@@ -129,7 +129,13 @@ class SigLipQwenVLM(nn.Module):
         config = LoraConfig(r=lc["r"], lora_alpha=lc["alpha"], lora_dropout=lc["dropout"], bias="none",
                             target_modules=list(lc["targets"]), task_type="CAUSAL_LM")
         # PEFT injects the adapters in place, so `self.qwen.model` / `self.qwen.lm_head` stay valid.
-        self.peft_model = get_peft_model(self.qwen, config)
+        try:
+            self.peft_model = get_peft_model(self.qwen, config)
+        except ImportError as e:
+            if "torchao" in str(e):
+                raise ImportError("Installed torchao is too old for this peft version and is not needed here. "
+                                  "Fix with: pip uninstall -y torchao   (or pip install -U torchao)") from e
+            raise
         for n, p in self.qwen.named_parameters():
             if "lora_" in n:
                 p.data = p.data.float()

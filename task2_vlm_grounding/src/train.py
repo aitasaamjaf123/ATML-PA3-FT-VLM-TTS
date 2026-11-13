@@ -95,18 +95,29 @@ def sanity_checks(vlm: SigLipQwenVLM, store: FeatureStore, manifest: dict, cfg: 
     assert pk["supervised_text"].endswith("<|im_end|>") and pk["n_supervised"] >= 2
     # gradients must reach the connector through the frozen backbone
     vlm.train_mode()
-    vlm.connector.zero_grad(set_to_none=True)
     with autocast_ctx(vlm.device_):
-        loss = vlm.per_example_loss(ex, feats).mean()
-    (loss * 1024.0).backward()
-    grads = [p.grad for p in vlm.connector.parameters()]
-    assert all(g is not None and torch.isfinite(g).all() for g in grads), "connector gradients missing / non-finite"
-    gmax = max(float(g.abs().max()) for g in grads)
+        loss0 = vlm.per_example_loss(ex, feats).mean()
+    if not torch.isfinite(loss0):
+        raise RuntimeError(f"forward loss is {float(loss0)} in FP16 autocast: activations overflow before any "
+                           "gradient is computed (check feature cache / calibration scale)")
+    report["initial_caption_loss_batch"] = float(loss0)
+    grads, used_scale = None, None
+    for scale in (1024.0, 64.0, 1.0):          # emulate GradScaler back-off: FP16 grads may overflow at large scales
+        vlm.connector.zero_grad(set_to_none=True)
+        with autocast_ctx(vlm.device_):
+            loss = vlm.per_example_loss(ex, feats).mean()
+        (loss * scale).backward()
+        g = [p.grad for p in vlm.connector.parameters()]
+        if all(x is not None and torch.isfinite(x).all() for x in g):
+            grads, used_scale = g, scale
+            break
+    assert grads is not None, "connector gradients missing / non-finite at every loss scale (1024, 64, 1)"
+    gmax = max(float(x.abs().max()) for x in grads)
     assert gmax > 0.0, "connector gradients are all zero"
     assert all(p.grad is None for p in vlm.qwen.parameters()), "frozen Qwen parameters received gradients"
     vlm.connector.zero_grad(set_to_none=True)
-    report["connector_grad_abs_max_x1024"] = gmax
-    report["initial_caption_loss_batch"] = float(loss)
+    report["connector_grad_abs_max"] = gmax / used_scale
+    report["sanity_loss_scale_used"] = used_scale
     write_json(report, results_dir / "sanity_checks.json")
     return report
 
