@@ -26,9 +26,9 @@ COLUMN_CANDIDATES = {
     "gold": ["gold_answer", "gold", "ground_truth", "reference_answer", "answer_gold", "gt_answer", "target", "answer"],
     "logp": ["logp", "token_logp", "sampled_logp", "logprobs"],
     "kl_u_p": ["kl_u_p", "kl_uniform", "kl_u_p_tokens"],
-    "image_attn": ["image_attn", "image_attention", "attn_image", "image", "img_attn", "image_attn_mass", "A_image"],
-    "prompt_attn": ["prompt_attn", "prompt_text_attn", "prompt_attention", "attn_prompt", "prompt", "prompt_text", "text_prompt_attn"],
-    "gen_attn": ["gen_attn", "generated_attn", "generated_text_attn", "generated_attention", "attn_generated", "generated", "gen", "text_generated_attn"],
+    "image_attn": ["img_attn_total", "image_attn", "image_attention", "attn_image", "image", "img_attn", "image_attn_mass", "A_image"],
+    "prompt_attn": ["prompt_text_attn_total", "prompt_attn", "prompt_text_attn", "prompt_attention", "attn_prompt", "prompt", "prompt_text", "text_prompt_attn"],
+    "gen_attn": ["generated_text_attn_total", "gen_attn", "generated_attn", "generated_text_attn", "generated_attention", "attn_generated", "generated", "gen", "text_generated_attn"],
     "problem": ["problem", "question", "problem_text", "question_text"],
     "truncated": ["hit_max_new_tokens", "truncated", "is_truncated", "hit_max_tokens"],
 }
