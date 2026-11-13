@@ -1,5 +1,5 @@
 condition,task,seconds,limit
-baseline,gsm8k_cot,551.3566789627075,
-baseline,hellaswag,483.0531406402588,
-baseline,boolq,97.55806136131287,
-baseline,arc_easy,61.12733268737793,
+baseline,gsm8k_cot,1853.6326460838318,
+baseline,hellaswag,497.5846893787384,
+baseline,boolq,99.15900421142578,
+baseline,arc_easy,61.36058807373047,

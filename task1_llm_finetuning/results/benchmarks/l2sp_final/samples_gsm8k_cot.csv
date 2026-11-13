@@ -34,7 +34,18 @@ The fifth glass costs 60% of the price, which is 0.6 * $1.08 = $0.648.
 The sixth glass costs 60% of the price, which is 0.6 * $0.648 = $0.3888.
 The seventh glass costs 60% of the price, which is 0.6 * $0.3888 = $0.23328.
 The eighth glass costs 60% of the price, which is 0.6 * $0.23328 = $0.139968.
-The ninth glass costs 60% of the price, which is 0.6 * $0.139",[invalid],0.0,$0.139,0.0,256,False
+The ninth glass costs 60% of the price, which is 0.6 * $0.139968 = $0.0839808.
+The tenth glass costs 60% of the price, which is 0.6 * $0.0839808 = $0.05038848.
+The eleventh glass costs 60% of the price, which is 0.6 * $0.05038848 = $0.030233088.
+The twelfth glass costs 60% of the price, which is 0.6 * $0.030233088 = $0.0181398528.
+The thirteenth glass costs 60% of the price, which is 0.6 * $0.0181398528 = $0.01088389168.
+The fourteenth glass costs 60% of the price, which is 0.6 * $0.01088389168 = $0.006530334968.
+The fifteenth glass costs 60% of the price, which is 0.6 * $0.006530334968 = $0.0039181999808.
+The sixteenth glass costs 60% of the price, which is 0.6 * $0.0039181999808 = $0.00234891998848.
+To find the total cost, we add up all the prices: $5 + $3 + $1.80 + $1.08 + $0.648 + $0.3888 + $0.23328 + $0.139968 + $0.0839808 + $0.05038848 + $0.030233088 + $0.0181398528 + $0.01088389168 + $0.006530334968 + $0.0039181999808 + $0.00234891998848 = $1.0000000000000001.
+Therefore, Kylar needs to pay $1.00 for all 16 glasses.
+#### 1
+The answer is: 1",[invalid],0.0,1,0.0,845,False
 6,260,"If Seattle has 20 sheep, then Charleston has 4 * 20 = 80 sheep.
 And Toulouse has 2 * 80 = 160 sheep.
 Together, Toulouse, Charleston, and Seattle have 20 + 80 + 160 = 260 sheep.
@@ -685,7 +696,9 @@ In total, Frankie watched 2 hours + 30 minutes + 30 minutes + 2 hours = 7 hours 
 To find out how many 30-minute episodes he watched on Wednesday, we need to convert the total hours to minutes.
 There are 60 minutes in an hour, so 2 hours is equal to 2 x 60 = 120 minutes.
 Therefore, Frankie watched a total of 120 minutes + 30 minutes + 30 minutes = 180 minutes of TV.
-Since each 30-minute",[invalid],0.0,30,0.0,256,False
+Since each 30-minute episode is equal to 30 minutes, Frankie watched 180 minutes / 30 minutes = 6 episodes of TV on Wednesday.
+#### 6
+The answer is: 6",[invalid],0.0,6,0.0,296,False
 108,50,"Let's assume that Henry baked x cookies last year.
 He wants to make twice as many as he did last year, so he wants to make 2x cookies.
 He actually baked 15 more cookies than he meant to, so he baked 2x + 15 cookies.
@@ -762,7 +775,33 @@ If Adrien's salary four years ago was $40000, then his salary four years later i
 If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
 If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
 If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
-If Adrien's salary four years ago was $40000, then his salary four years",[invalid],0.0,"$40000,",0.0,256,False
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was $40000, then his salary four years later is $56000.
+If Adrien's salary four years ago was",[invalid],0.0,$56000.,0.0,1024,True
 120,240,"Miguel uses 2 pads of paper a week, so he uses 2 x 30 = 60 sheets of paper each week.
 There are 4 weeks in a month, so Miguel uses 60 x 4 = 240 sheets of paper every month.
 #### 240
@@ -1815,7 +1854,32 @@ Margot's total stories in the second week is 120 stories.
 Alani's total stories in the first and second week is 40 + 40 = 80 stories.
 Braylen's total stories in the first and second week is 80 + 80 = 160 stories.
 Margot's total stories in the first and second week is 120 + 120 = 240 stories.
-Alani's total stories in the first and second week is",[invalid],0.0,240,0.0,256,False
+Alani's total stories in the first and second week is 80 + 80 = 160 stories.
+Braylen's total stories in the first and second week is 160 + 160 = 320 stories.
+Margot's total stories in the first and second week is 240 + 240 = 480 stories.
+Alani's total stories in the first and second week is 160 + 160 = 320 stories.
+Braylen's total stories in the first and second week is 320 + 320 = 640 stories.
+Margot's total stories in the first and second week is 480 + 480 = 960 stories.
+Alani's total stories in the first and second week is 320 + 320 = 640 stories.
+Braylen's total stories in the first and second week is 640 + 640 = 1280 stories.
+Margot's total stories in the first and second week is 960 + 960 = 1920 stories.
+Alani's total stories in the first and second week is 640 + 640 = 1280 stories.
+Braylen's total stories in the first and second week is 1280 + 1280 = 2560 stories.
+Margot's total stories in the first and second week is 1920 + 1920 = 3840 stories.
+Alani's total stories in the first and second week is 1280 + 1280 = 2560 stories.
+Braylen's total stories in the first and second week is 2560 + 2560 = 5120 stories.
+Margot's total stories in the first and second week is 3840 + 3840 = 7680 stories.
+Alani's total stories in the first and second week is 2560 + 2560 = 5120 stories.
+Braylen's total stories in the first and second week is 5120 + 5120 = 10240 stories.
+Margot's total stories in the first and second week is 7680 + 7680 = 15360 stories.
+Alani's total stories in the first and second week is 5120 + 5120 = 10240 stories.
+Braylen's total stories in the first and second week is 10240 + 10240 = 20480 stories.
+Margot's total stories in the first and second week is 15360 + 15360 = 30720 stories.
+Alani's total stories in the first and second week is 10240 + 10240 = 20480 stories.
+Braylen's total stories in the first and second week is 20480 + 20480 = 40960 stories.
+Margot's total stories in the first and second week is 30720 + 30720 = 61440 stories.
+Alani's total stories in the first and second week is 20480 + 20480 = 40960 stories.
+Braylen's total",[invalid],0.0,40960,0.0,1024,True
 285,21,"If Ann is 9 years old, then her brother is 9 x 2 = 18 years old.
 In 3 years, Ann will be 9 + 3 = 12 years old.
 In 3 years, her brother will be 18 + 3 = 21 years old.
@@ -1882,7 +1946,7 @@ Jim has 18 + 1 = 19 points.
 Tony has 42 + 1 = 43 points.
 In total, all three players have 22 + 19 + 43 = 84 points.
 #### 84
-The answer is:",[invalid],0.0,84,0.0,256,False
+The answer is: 84",[invalid],0.0,84,0.0,259,False
 294,3,"The youngest son is half as old as the oldest son, so he is 8/2 = 4 years old.
 The total number of years the two sons have is 8 + 4 = 12 years.
 The oldest son is 8 years old, so he can wash 8 oranges.
@@ -2126,7 +2190,10 @@ For Job B, the property tax is $6,000, and the tax rate is 10% of the net income
 The net income for Job B is $42,000 - $6,000 = $36,000.
 The tax amount for Job B is 0.10 * ($36,000 - $6,000) = $3,000.
 The total pay for Job B is $42,000 - $3,000 = $39,000.
-To find the difference in net pay, we subtract the net pay for Job A from the net pay for Job B: $39,000 - $25,0",[invalid],0.0,"$25,0",0.0,256,False
+To find the difference in net pay, we subtract the net pay for Job A from the net pay for Job B: $39,000 - $25,000 = $14,000.
+Therefore, Nick will make $14,000 more at the job with a higher net pay rate.
+#### 14000
+The answer is: 14000",[invalid],0.0,14000,0.0,308,False
 332,44,"40 percent of the castles are ruins, so there are 220 * 0.40 = 88 ruined castles in Scotland.
 Half of the ruined castles are unmanned, so there are 88 / 2 = 44 unmanned ruined castles in Scotland.
 #### 44
@@ -3152,7 +3219,9 @@ The 10th cheerleader is 60"" tall.
 So, the total height of the 10 cheerleaders is 9 * 7.11"" + 60"" = 63.99"" + 60"" = 123.99"" in total.
 If they build a human pyramid, where 4 girls are on the bottom, 3 stand on top of the 4, 2 stand on top of the 3, and the shortest girl is at the top, then there are a total of 4 + 3 + 2 + 1 = 10 cheerleaders in the pyramid.
 The height of the pyramid is the total height of the 10 cheerleaders, so it is 123.99"" / 10 = 12.399"" in total.
-To convert this to feet, we divide by 12 since there are 12 inches in a foot, so the height of",[invalid],0.0,12,0.0,256,False
+To convert this to feet, we divide by 12 since there are 12 inches in a foot, so the height of the pyramid is 12.399"" / 12 = 1.033 feet.
+#### 1
+The answer is: 1",[invalid],0.0,1,0.0,290,False
 495,200,"Charisma works for 8 hours every day, so in 5 days, she works for 8 x 5 = 40 hours.
 She walks for 5 minutes every hour she's at work, so in 40 hours, she walks for 5 x 40 = 200 minutes.
 Therefore, Charisma has walked for 200 minutes.
@@ -3753,7 +3822,10 @@ Combining like terms, we get 3.91B = 4500.
 Dividing both sides by 3.91, we get B = 1176.
 Therefore, the number of red jelly beans is 0.9B = 0.9 * 1176 = 1058.
 The number of green jelly beans is 1.01B = 1.01 * 1176 = 1189.
-The difference between the number of green jelly beans and red jelly beans is 1189 - 1",[invalid],0.0,1,0.0,256,False
+The difference between the number of green jelly beans and red jelly beans is 1189 - 1058 = 131.
+Therefore, the jar contains 131 more green jelly beans than red jelly beans.
+#### 131
+The answer is: 131",[invalid],0.0,131,0.0,297,False
 588,52,"Jared's typing speed increased from 47 WPM to 52 WPM, so the increase in speed is 52 - 47 = 5 WPM.
 If he continues to increase his typing speed by 5 words, his new typing speed will be 52 + 5 = 57 WPM.
 To find the average of the three measurements, we add up the three speeds and divide by 3.
@@ -3796,13 +3868,35 @@ After 6 days, the beanstalk will be 128 * 2 = 256 feet tall.
 After 7 days, the beanstalk will be 256 * 2 = 512 feet tall.
 After 8 days, the beanstalk will be 512 * 2 = 1024 feet tall.
 After 9 days, the beanstalk will be 1024 * 2 = 2048 feet tall.
-After 10 days, the beanstalk will be 2048 * 2",[invalid],0.0,2,0.0,256,False
+After 10 days, the beanstalk will be 2048 * 2 = 4096 feet tall.
+After 11 days, the beanstalk will be 4096 * 2 = 8192 feet tall.
+After 12 days, the beanstalk will be 8192 * 2 = 16384 feet tall.
+After 13 days, the beanstalk will be 16384 * 2 = 32768 feet tall.
+After 14 days, the beanstalk will be 32768 * 2 = 65536 feet tall.
+After 15 days, the beanstalk will be 65536 * 2 = 131072 feet tall.
+After 16 days, the beanstalk will be 131072 * 2 = 262144 feet tall.
+After 17 days, the beanstalk will be 262144 * 2 = 524288 feet tall.
+After 18 days, the beanstalk will be 524288 * 2 = 1048576 feet tall.
+After 19 days, the beanstalk will be 1048576 * 2 = 2097152 feet tall.
+After 20 days, the beanstalk will be 2097152 * 2 = 4194304 feet tall.
+After 21 days, the beanstalk will be 4194304 * 2 = 8388608 feet tall.
+After 22 days, the beanstalk will be 8388608 * 2 = 16777216 feet tall.
+After 23 days, the beanstalk will be 16777216 * 2 = 33554432 feet tall.
+After 24 days, the beanstalk will be 33554432 * 2 = 67108864 feet tall.
+After 25 days, the beanstalk will be 67108864 * 2 = 134217728 feet tall.
+After 26 days, the beanstalk will be 134217728 * 2 = 268435456 feet tall.
+After 27 days, the beanstalk will be 268435456 * 2 = 536870912 feet tall.
+After 28 days, the beanstalk will be 536870912 * 2 = 1073741824 feet tall.
+After 29 days, the beanstalk will be 1073741824 * 2 = 2147483648 feet tall.
+After 30 days, the beanstalk will be 2147483648 * 2 = 4294967296 feet tall.
+After 31 days, the beanstalk will be 4294967296 * 2 = 8589934592 feet tall.
+After 32 days, the beanstalk will be 8589934592 * 2 = 171798",[invalid],0.0,171798,0.0,1024,True
 594,42,"A cup of mushrooms weighs 100 grams and has 3 grams of protein, so each day John eats 200 grams of mushrooms, which is 200/100 = 2 cups of mushrooms.
 Each cup of mushrooms has 3 grams of protein, so John eats 2 cups x 3 grams = 6 grams of protein per day.
 There are 7 days in a week, so John eats 6 grams x 7 days = 42 grams of protein per week.
 #### 42
 The answer is: 42",[invalid],0.0,42,1.0,119,False
-595,13,"If Jerry is twice as old as he was 5 years ago, then his current age is 2 * (Jerry's age 5 years ago) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) =",[invalid],0.0,5,0.0,256,False
+595,13,"If Jerry is twice as old as he was 5 years ago, then his current age is 2 * (Jerry's age 5 years ago) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) = 2 * (Jerry's age 5 years ago - 5) =",[invalid],0.0,5,0.0,1024,True
 596,260,"The base price for each implant is $2000, so for 2 implants, the total cost is 2 * $2000 = $4000.
 For one of the implants, there is an extra $500 for the crown, so the total cost for the crown is $500.
 The total cost for the dental work is $4000 + $500 = $4500.
@@ -3891,7 +3985,46 @@ Therefore, she will use 1 pump per 120 washings.
 If she uses 1 pump per wash, she will use 1 pump per 120 washings.
 Therefore, she will use 1 pump per 120 washings.
 If she uses 1 pump per wash, she will use 1 pump per 120 washings.
-Therefore, she will use 1 pump",[invalid],0.0,1,0.0,256,False
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 120 washings.
+Therefore, she will use 1 pump per 120 washings.
+If she uses 1 pump per wash, she will use 1 pump per 12",[invalid],0.0,12,0.0,1024,True
 608,8,"Joe has $50 to buy the outfit.
 The shirt has a price of $25, so he will pay $25 - (30% of $25) = $25 - $7.50 = $17.50 for the shirt.
 The pair of shorts has a price of $35, so he will pay $35 - (30% of $35) = $35 - $10.50 = $24.50 for the shorts.
@@ -4211,7 +4344,10 @@ We can solve this system of equations by substitution or elimination.
 Let's use elimination. Multiply the second equation by 2 to get 2 * number of sheep + 2 * number of geese = 40.
 Subtract the first equation from the second equation to eliminate the number of geese: (2 * number of sheep + 2 * number of geese) - (4 * number of sheep + 2 * number of geese) = 40 - 70.
 Simplifying, we get -2 * number of sheep = -30.
-Dividing both sides by -2",[invalid],0.0,-2,0.0,256,False
+Dividing both sides by -2, we get number of sheep = 15.
+Therefore, there are 15 sheep on Lee's farm.
+#### 15
+The answer is: 15",[invalid],0.0,15,1.0,292,False
 661,44,"The normal brand of coffee costs $5 per pound, so for a week's worth of coffee, Roger would need 7 pounds x $5/pound = $35.
 The more expensive brand costs 20% more than the normal brand, so it costs $5 + ($5 x 20%) = $5 + $1 = $6 per pound.
 For a week's worth of coffee, Roger would need 7 pounds x $6/pound = $42.
@@ -4616,7 +4752,8 @@ To find the average time the two take to eat the sausages, we need to add the ti
 The cat takes 30 minutes to eat 9 sausages, so it takes 30/9 = 10/3 minutes to eat 1 sausages.
 The dog takes 2/3 * 30 = 20 minutes to eat 9 sausages.
 So, the average time the two take to eat the sausages is (10/3 + 20)/2 = (10/3 + 60/3)/2 = (70/3)/2 = 70/6 = 35/3 minutes.
-",[invalid],0.0,3,0.0,256,False
+#### 35
+The answer is: 35",[invalid],0.0,35,0.0,268,False
 726,10,"If the length of one of Topher's shoes is 8-feet and 4-inches, we can convert this to inches by multiplying by 12 (since there are 12 inches in a foot).
 So, the length of one of Topher's shoes is 8 * 12 + 4 = 100 inches.
 We know that the length of one of Topher's shoes is 10 inches longer than 9 times the length of one of Bobby's shoes.
@@ -5014,7 +5151,10 @@ The total number of orange fish he had after buying more is 2W.
 Since the total number of fish he had after buying more is 24, we can set up the equation: W + 4 + 2W = 24.
 Combining like terms, we get 3W + 4 = 24.
 Subtracting 4 from both sides, we get 3W = 20.
-",[invalid],0.0,20.,0.0,256,False
+Dividing both sides by 3, we get W = 6.
+Therefore, Bob bought 6 white fish at the store.
+#### 6
+The answer is: 6",[invalid],0.0,6,0.0,293,False
 784,15,"Andy's car fuel efficiency is 10 MPG, so for every 10 miles he drives, he uses 1 gallon of gas.
 The one-way distance between his home and office is 5 miles, so he drives 5 miles per day.
 Since he drives 5 miles per day, he drives 5 x 5 = 25 miles per week.
@@ -5104,7 +5244,12 @@ His total earnings for 2 months at his new rate is $10.50/hour x 20 hours = $210
 On his first anniversary, Billy was given a raise of $1.00 per hour, so his new hourly rate is $10.50 + $1.00 = $11.50.
 His total earnings for 2 months at his new rate is $11.50/hour x 20 hours = $230.
 Billy's total earnings for 2 months is $200 + $210 + $230 = $640.
-Sally's starting salary is $0.50 more per hour than Billy's starting salary, so her starting salary is $10 + $0.50 = $10.5",[invalid],0.0,$10.5,0.0,256,False
+Sally's starting salary is $0.50 more per hour than Billy's starting salary, so her starting salary is $10 + $0.50 = $10.50.
+Sally's total earnings for 20 hours is $10.50/hour x 20 hours = $210.
+Billy's total earnings for 20 hours is $640.
+Billy earns $640 - $210 = $430 more than Sally.
+#### 430
+The answer is: 430",[invalid],0.0,430,0.0,337,False
 799,4,"3 loaves of bread cost 3 * $2 = $6.
 2 bagels cost 2 * $1 = $2.
 The difference in cost is $6 - $2 = $4.
@@ -5215,7 +5360,10 @@ Two of his friends can play for 10 minutes each, so they can play for 10 * 2 = 2
 One of his friends can play for 30 minutes.
 In total, they can play for 20 + 20 + 30 = 70 minutes.
 Since they play for 4 hours, which is 240 minutes, they can play for 240 / 70 = 3.43 quarters.
-Since Jack can play for 5 quarters, he will",[invalid],0.0,5,0.0,256,False
+Since Jack can play for 5 quarters, he will spend 3.43 * 5 = 17.15 quarters.
+Since each quarter costs $0.50, Jack will spend 17.15 * $0.50 = $8.58.
+#### 8.58
+The answer is: 8.58",[invalid],0.0,8.58,0.0,322,False
 815,4,"Let's assume the amount of salt used is S ounces.
 Since Tanya uses twice as much oil as salt, she uses 2S ounces of oil.
 Since Tanya uses twice as much salt as zest, she uses 2S/2 = S ounces of zest.
@@ -5335,7 +5483,9 @@ The cost of 10 pictures is 10 * $15.00 = $150.00
 The total cost of installation and additional items is $129.00 + $60.00 + $30.00 + $15.00 + $150.00 = $384.00
 Angela has 6 mirrors and 2 chandeliers, so she needs to install 6 * $15.00 = $90.00 for the mirrors and chandeliers.
 She also needs to install 20 pictures, so she needs to install 20 * $15.00 = $300.00 for the pictures.
-The total cost of installation and additional items is $384.00 + $9",[invalid],0.0,$9,0.0,256,False
+The total cost of installation and additional items is $384.00 + $90.00 + $300.00 = $774.00
+#### 774
+The answer is: 774",[invalid],0.0,774,0.0,291,False
 832,42,"Eva has saved $20.00
 Anthony has saved $10.00 more than Eva, so Anthony has saved $20.00 + $10.00 = $30.00
 Roy has saved 40% more than Anthony, so Roy has saved $30.00 + ($30.00 * 40%) = $30.00 + $12.00 = $42.00
@@ -5423,7 +5573,11 @@ Since the rest of the students are good at both math and English, we have $|A\ca
 Substituting the given values, we have $|A|+|B| - |A\cap B|=20-5-8$.
 Simplifying, we get $|A|+|B| - |A\cap B|=7$.
 Since $|A|=5$, we can substitute this value into the equation to get $5+|B| - |A\cap B|=7$.
-Simplifying further, we have $|B| - |A",[invalid],0.0,7$.,0.0,256,False
+Simplifying further, we have $|B| - |A\cap B|=2$.
+Since $|B|=8$, we can substitute this value into the equation to get $8 - |A\cap B|=2$.
+Solving for $|A\cap B|$, we find $|A\cap B|=6$.
+Therefore, the number of students who are good at math is $|A|=5$.
+The answer is: 5",[invalid],0.0,5,0.0,340,False
 846,11,"The total time for each group is 2 minutes for getting on stage + 6 minutes for performing + 2 minutes for exiting the stage + 10 minutes for intermission = 10 minutes.
 Since there are 60 minutes in an hour, the total time for the concert is 2 hours x 60 minutes/hour = 120 minutes.
 If each group takes 10 minutes, then the number of groups that can perform is 120 minutes / 10 minutes/group = 12 groups.
@@ -5960,7 +6114,9 @@ Dividing both sides by 4, we get J = 20.
 So, John's age is 20 years old.
 Since Paul is 10 years older than John, Paul's age is 20 + 10 = 30 years old.
 And since Peter's age is equal to the sum of Paul and John's age, Peter's age is 30 + 20 = 50 years old.
-Therefore, the age of",[invalid],0.0,50,1.0,256,False
+Therefore, the age of Peter is 50 years old.
+#### 50
+The answer is: 50",[invalid],0.0,50,1.0,276,False
 932,24,"Maria gave each of her friends 2 water balloons, so she gave a total of 4 friends x 2 balloons = 8 balloons.
 She also had one water balloon for herself, so she had a total of 8 balloons + 1 balloon = 9 balloons.
 Her mom gave each person 3 more balloons, so she gave a total of 4 friends x 3 balloons = 12 balloons.
@@ -6157,7 +6313,8 @@ Since Amora and Lainey got 70 corn chips each, we can set up the equation 51 + (
 Simplifying the equation, we get x/3 = 19.
 Multiplying both sides of the equation by 3, we get x = 57.
 Therefore, there were a total of 155 + 57 = 212 corn chips altogether.
-",[invalid],0.0,212,0.0,256,False
+#### 212
+The answer is: 212",[invalid],0.0,212,0.0,270,False
 962,1000,"Jen has to pay $400 for the supplies.
 The tickets for travel cost 50% more than the supplies, so the tickets cost $400 + ($400 * 50%) = $400 + $200 = $600.
 The total cost of travel is the sum of the supplies and the tickets, so it is $400 + $600 = $1000.
@@ -6303,7 +6460,9 @@ Since Pat can't have a fraction of a plant, she needs to round up to the nearest
 Pat needs 10 plants to fill up her flower bed.
 Pat already owns 17 flowers, so she needs to buy 10 - 17 = -7 more plants.
 Since Pat can't buy a negative number of plants, she needs to buy 10 more plants.
-Each flowering plant costs $6 at the store, so Pat will spend",[invalid],0.0,$6,0.0,256,False
+Each flowering plant costs $6 at the store, so Pat will spend 10 * $6 = $60 at the store to fill up her flower bed.
+#### 60
+The answer is: 60",[invalid],0.0,60,0.0,288,False
 985,63,"Edgar eats 18 pretzels a day.
 His brother eats 1/2 as many, so he eats 18 * 1/2 = 9 pretzels a day.
 In a week, there are 7 days.
@@ -6362,7 +6521,7 @@ Since the first plane goes to Greece for three-quarters of its flights, it makes
 The remaining flights are split equally between flights to France and flights to Germany, so the first plane makes 3/2x + 66 - (3/2x + 66) = 0 flights to France and Germany.
 Therefore, the first plane makes 0 flights to France and Germany in one day.
 #### 0
-The answer",[invalid],0.0,0,0.0,256,False
+The answer is: 0",[invalid],0.0,0,0.0,260,False
 994,2,"Tobias' howl lasts for 20 seconds.
 Chikote's howl lasts for twice as long as Tobias, so it lasts for 20 x 2 = 40 seconds.
 The combined length of time for Tobias and Chikote's howls is 20 + 40 = 60 seconds.
@@ -6471,7 +6630,9 @@ The remaining half of the students over 16 years old are female, so there are 15
 The remaining half of the students are under 16 years old, so there are 3000/2 = 1500 students under 16 years old.
 One-half of the students under 16 years old are male, so there are 1500/2 = 750 male students under 16 years old.
 The remaining half of the students under 16 years old are female, so there are 1500/2 = 750 female students under 16 years old.
-In total, there are 750 + 750 = 1500 female students at Brook Hills High School",[invalid],0.0,1500,0.0,256,False
+In total, there are 750 + 750 = 1500 female students at Brook Hills High School.
+#### 1500
+The answer is: 1500",[invalid],0.0,1500,0.0,273,False
 1010,5,"Bethany can run 10 laps in one hour.
 Trey can run 4 more laps than Bethany, so Trey can run 10 + 4 = 14 laps in one hour.
 Shaelyn can run half as many laps as Trey, so Shaelyn can run 14 / 2 = 7 laps in one hour.
@@ -6486,7 +6647,10 @@ So, the total amount of water pumped into the tank on the first day is 4500 + 33
 On the second day, Wanda pumped 2/3 of the amount of water she pumped on the previous day, which is 2/3 * 4500 = 3000 gallons.
 Ms. B only pumped 1/3 of the number of gallons she pumped on the first day, which is 1/3 * 3375 = 1125 gallons.
 So, the total amount of water pumped into the tank on the second day is 3000 + 1125 = 4125 gallons.
-The total amount of water pumped into the tank is 7875 + 4125 = 120",[invalid],0.0,120,0.0,256,False
+The total amount of water pumped into the tank is 7875 + 4125 = 12000 gallons.
+The tank has a capacity of 18000 gallons, so there are 18000 - 12000 = 6000 gallons remaining for the tank to be full.
+#### 6000
+The answer is: 6000",[invalid],0.0,6000,1.0,321,False
 1012,94,"Let's assume the initial charge of the power bank is 100%.
 After 5 hours, the battery lost 9% of its capacity, so it is now at 100% - 9% = 91%.
 After 3 hours, the battery lost 7% of its capacity, so it is now at 91% - 7% = 84%.
@@ -6608,7 +6772,9 @@ She added 8 blue balloons to her remaining clutch, so she had 6 + 8 = 14 blue ba
 She added 75% of the blue balloons to her remaining clutch, so 75/100 * 8 = 6 blue balloons were added.
 After adding the blue balloons, Sally had 14 + 6 = 20 blue balloons.
 In total, Sally had 15 red balloons + 6 yellow balloons + 20 blue balloons = 41 balloons.
-Therefore, Sally finally carried 41",[invalid],0.0,41,0.0,256,False
+Therefore, Sally finally carried 41 balloons into the school.
+#### 41
+The answer is: 41",[invalid],0.0,41,0.0,273,False
 1030,24,"There's a 50% chance that the substitute teacher will come in and not collect the homework.
 If the substitute teacher comes in, there's a 40% chance that the normal teacher will give everyone an extension.
 If the normal teacher gives an extension, there's a 20% chance that Marcus can convince the teacher and get a personal extension.
@@ -6657,7 +6823,12 @@ His college degree tripled his income, so his income after college is 3 * $50,00
 He had a 25k a year job before college, so his total income before college is $50,000 + $25,000 = $75,000 per year.
 To earn the money equivalent to the loans, Jim needs to earn $50,000 per year for 4 years, so he needs to earn $50,000 * 4 = $200,000 in total.
 To earn the money equivalent to the money lost from not working while in school, Jim needs to earn $150,000 - $75,000 = $75,000 per year.
-To earn the money equivalent to the money lost from not working while in school, Jim needs to earn $75,000 per year for 4 years, so he needs to earn $75,000 * 4 = $300,000",[invalid],0.0,"$300,000",0.0,256,False
+To earn the money equivalent to the money lost from not working while in school, Jim needs to earn $75,000 per year for 4 years, so he needs to earn $75,000 * 4 = $300,000 in total.
+To earn the money equivalent to the loans and the money lost from not working while in school, Jim needs to earn $200,000 + $300,000 = $500,000 in total.
+Since Jim's current income is $75,000 per year, it would take him $500,000 / $75,000 = 6.67 years to earn the money equivalent to the loans and the money lost from not working while in school.
+Since it takes him 4 years to finish college, it would take him 6.67 - 4 = 2.67 years to earn the money equivalent to the loans and the money lost from not working while in school.
+#### 2.67
+The answer is: 2.67",[invalid],0.0,2.67,0.0,438,False
 1039,160,"The bed measures 6 feet long by 8 feet wide, so the total area of the bed is 6 * 8 = 48 square feet.
 Jim needs two pieces of fabric that are 2 feet longer and 2 feet wider than the bed, so each piece of fabric will have an area of (6 + 2) * (8 + 2) = 8 * 10 = 80 square feet.
 Since Jim needs two pieces of fabric, he will need a total of 80 * 2 = 160 square feet of fabric.
@@ -6913,7 +7084,9 @@ The third train arrives an hour after the second train, so it arrives at 40 + 60
 The third train stays in the station immediately after it arrives, so Paul will wait for the third train for a total of 100 minutes.
 The fourth train arrives 20 minutes after the third train, so it arrives at 100 + 20 = 120 minutes.
 The fourth train will arrive at 120 minutes, so Paul will wait for the fourth train for a total of 120 minutes.
-",[invalid],0.0,120,0.0,256,False
+In total, Paul will wait for his train for 30 + 45 + 100 + 120 = 295 minutes.
+#### 295
+The answer is: 295",[invalid],0.0,295,0.0,304,False
 1078,8,"Melanie has saved 10 toothpicks each week for 12 weeks, so she has saved a total of 10 * 12 = 120 toothpicks.
 She needs to collect 200 toothpicks in total, so she still needs 200 - 120 = 80 toothpicks.
 If she saves 10 toothpicks each week, it will take her 80 / 10 = 8 more weeks to collect the remaining toothpicks.
@@ -7003,7 +7176,9 @@ If the group of lazy Allosaurus gulped down the last 270 kilograms of meat, then
 So, the weight of the remaining meat after the Allosaurus gulped down was 270 kilograms.
 If the remaining weight after the Allosaurus gulped down was 1/2 of the remaining weight after the velociraptors scavenged, then the weight of the remaining meat after the velociraptors scavenged was 270 kilograms * 2 = 540 kilograms.
 If the weight of the remaining meat after the velociraptors scavenged was 1/3 of the original weight of the triceratops, then the original weight of the triceratops was 540 kilograms * 3 = 1620 kilograms.
-Therefore, there were 1620 kilograms of meat on the triceratops before",[invalid],0.0,1620,0.0,256,False
+Therefore, there were 1620 kilograms of meat on the triceratops before the T-Rex ate.
+#### 1620
+The answer is: 1620",[invalid],0.0,1620,0.0,278,False
 1093,144,"The north and south walls together cover an area of 10 x 8 + 10 x 8 = 160 square feet.
 The east and west walls together cover an area of 5 x 8 + 5 x 8 = 80 square feet.
 The total area to be painted is 160 + 80 = 240 square feet.
@@ -7068,7 +7243,9 @@ She returned one item that cost $15.00, so her balance is now $85.00 - $15.00 = 
 She bought a frying pan that was on sale for 20% off $20.00, so the discounted price is $20.00 - (20/100) * $20.00 = $20.00 - $4.00 = $16.00.
 She also bought a set of towels that was 10% off $30.00, so the discounted price is $30.00 - (10/100) * $30.00 = $30.00 - $3.00 = $27.00.
 The total amount she spent on these purchases is $16.00 + $27.00 = $43.00.
-Adding this to her previous balance of $70.00, her new balance on her credit card is $70.00 + $4",[invalid],0.0,$4,0.0,256,False
+Adding this to her previous balance of $70.00, her new balance on her credit card is $70.00 + $43.00 = $113.00.
+#### 113
+The answer is: 113",[invalid],0.0,113,1.0,283,False
 1103,90,"Let's assume the total number of jellyfish in the tank is x.
 A fifth of the jellyfish are large, so there are (1/5)x large jellyfish.
 A third of the large jellyfish change color, so there are (1/3)(1/5)x = (1/15)x large jellyfish that change color.
@@ -7243,7 +7420,12 @@ Dividing both sides by 2, we get x + y = 34.
 We also know that Camden painted 12 more than Sarah, so y = x + 12.
 Substituting this into the equation x + y = 34, we get x + (x + 12) = 34.
 Combining like terms, we get 2x + 12 = 34.
-Subtracting 12 from both sides, we get ",[invalid],0.0,12,0.0,256,False
+Subtracting 12 from both sides, we get 2x = 22.
+Dividing both sides by 2, we get x = 11.
+So, x + y = 11 + (11 + 12) = 34.
+Therefore, Camden painted 12 more eggs than Arnold, which is 12 - 11 = 1 more.
+#### 1
+The answer is: 1",[invalid],0.0,1,0.0,338,False
 1130,25,"Nik has 200 crayons and wants to separate them into groups of 8, so he will have 200/8 = 25 groups of crayons.
 Each group of crayons weighs 8 ounces, so the total weight of the crayons is 25 * 8 = 200 ounces.
 Each box weighs 8 ounces, so the total weight of the boxes is 25 * 8 = 200 ounces.
@@ -7501,7 +7683,56 @@ $R = \frac{17}{5}R$
 $R = \frac{17}{5}R - \frac{12}{5}R$
 $R = \frac{5}{5}R$
 $R = R$
-Therefore, Rissa is left with $\frac{12",[invalid],0.0,12,0.0,256,False
+Therefore, Rissa is left with $\frac{12}{5}R$.
+Since Rissa gave an equal amount of money to Ronnie, we can set up the equation:
+$\frac{12}{5}R = \frac{12}{5}R + R$
+$R = \frac{12}{5}R + R$
+$R = \frac{17}{5}R$
+$R = \frac{17}{5}R - \frac{12}{5}R$
+$R = \frac{5}{5}R$
+$R = R$
+Therefore, Rissa is left with $\frac{12}{5}R$.
+Since Rissa gave an equal amount of money to Ronnie, we can set up the equation:
+$\frac{12}{5}R = \frac{12}{5}R + R$
+$R = \frac{12}{5}R + R$
+$R = \frac{17}{5}R$
+$R = \frac{17}{5}R - \frac{12}{5}R$
+$R = \frac{5}{5}R$
+$R = R$
+Therefore, Rissa is left with $\frac{12}{5}R$.
+Since Rissa gave an equal amount of money to Ronnie, we can set up the equation:
+$\frac{12}{5}R = \frac{12}{5}R + R$
+$R = \frac{12}{5}R + R$
+$R = \frac{17}{5}R$
+$R = \frac{17}{5}R - \frac{12}{5}R$
+$R = \frac{5}{5}R$
+$R = R$
+Therefore, Rissa is left with $\frac{12}{5}R$.
+Since Rissa gave an equal amount of money to Ronnie, we can set up the equation:
+$\frac{12}{5}R = \frac{12}{5}R + R$
+$R = \frac{12}{5}R + R$
+$R = \frac{17}{5}R$
+$R = \frac{17}{5}R - \frac{12}{5}R$
+$R = \frac{5}{5}R$
+$R = R$
+Therefore, Rissa is left with $\frac{12}{5}R$.
+Since Rissa gave an equal amount of money to Ronnie, we can set up the equation:
+$\frac{12}{5}R = \frac{12}{5}R + R$
+$R = \frac{12}{5}R + R$
+$R = \frac{17}{5}R$
+$R = \frac{17}{5}R - \frac{12}{5}R$
+$R = \frac{5}{5}R$
+$R = R$
+Therefore, Rissa is left with $\frac{12}{5}R$.
+Since Rissa gave an equal amount of money to Ronnie, we can set up the equation:
+$\frac{12}{5}R = \frac{12}{5}R + R$
+$R = \frac{12}{5}R + R$
+$R = \frac{17}{5}R$
+$R = \frac{17}{5}R - \frac{12}{5}R$
+$R = \frac{5}{5}R$
+$R = R$
+Therefore, Rissa is left with $\frac{12}{5}R$.
+",[invalid],0.0,$.,0.0,1024,True
 1170,2,"If there are equal amounts of red, white, and purple paint in the mural, then each color is used the same amount.
 Let's assume the amount of red paint used is R.
 Since there are equal amounts of red, white, and purple paint, then the amount of yellow paint used is also R.
@@ -7917,7 +8148,7 @@ The answer is: 12",[invalid],0.0,12,1.0,57,False
 1235,60,"Michael is traveling at an average speed of 50 km/hr for 3 days, so he is traveling at a total speed of 50 km/hr x 3 days = 150 km/day.
 If the distance between Alaska and Texas is 6000 km, then Michael has covered a total distance of 150 km/day x 6000 km = 900,000 km.
 To find the percentage of the distance covered, we divide the distance covered by the total distance and multiply by 100.
-So, the percentage of the distance covered is (900,000 km / 6000 km) x 100 = 1500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",[invalid],0.0,1500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,0.0,256,False
+So, the percentage of the distance covered is (900,000 km / 6000 km) x 100 = 1500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",[invalid],0.0,1500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,0.0,1024,True
 1236,84,"Madeline ate 6 grapes.
 Her brother used up 5 times as many grapes as Madeline, so he used 5 * 6 = 30 grapes.
 Together, they used 6 + 30 = 36 grapes.
@@ -8291,7 +8522,9 @@ Therefore, the total cost of the T-shirts after the discount is $16 - $8 = $8.
 The original price of the shoes is $40, and Jake buys a pair of shoes that is 40% off the original price.
 The discount on the shoes is 40% of $40, which is $40 * 0.4 = $16.
 So, Jake gets a discount of $16 on the shoes, and the total cost of the shoes after the discount is $40 - $16 = $24.
-Therefore, the total amount of money Jake spends at the store is $",[invalid],0.0,$24.,0.0,256,False
+Therefore, the total amount of money Jake spends at the store is $8 + $24 = $32.
+#### 32
+The answer is: 32",[invalid],0.0,32,0.0,278,False
 1295,2,"Ryan's allowance is $6 each week, so in 3 weeks, he will have $6 x 3 = $18.
 He bought ice cream cones for himself and 3 friends, so he spent $1.25 x 4 = $5 on ice cream.
 Now he has $18 - $5 = $13 left.
@@ -8309,7 +8542,9 @@ The cost of the jackfruit is $8 per pound, so the cost of the jackfruit for 3.5 
 The cost of the special honey is $10 per pound, so the cost of the special honey for 2 pounds is 2 * $10 = $20.
 The total cost of the ingredients for 1 jar of the mixture is $21 + $28 + $20 = $79.
 The selling price of each jar is $50, so the profit per jar is $50 - $79 = -$29.
-To find the profit for 10 jars, we multiply the profit per jar by 10, so the total profit is -$29 * 10",[invalid],0.0,10,0.0,256,False
+To find the profit for 10 jars, we multiply the profit per jar by 10, so the total profit is -$29 * 10 = -$290.
+#### 290
+The answer is: 290",[invalid],0.0,290,0.0,276,False
 1298,31,"The value of 32 quarters is 32 * $0.25 = $8
 The value of 95 dimes is 95 * $0.10 = $9.50
 The value of 120 nickels is 120 * $0.05 = $6

@@ -1,5 +1,5 @@
 condition,task,seconds,limit
-oplora16_final,gsm8k_cot,500.90345215797424,
-oplora16_final,hellaswag,492.45242285728455,
-oplora16_final,boolq,98.33371019363403,
-oplora16_final,arc_easy,62.17949342727661,
+oplora16_final,gsm8k_cot,1324.12899184227,
+oplora16_final,hellaswag,505.3995223045349,
+oplora16_final,boolq,98.7424750328064,
+oplora16_final,arc_easy,60.424917459487915,

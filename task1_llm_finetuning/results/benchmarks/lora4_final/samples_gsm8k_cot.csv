@@ -35,7 +35,18 @@ The fifth glass costs 60% of the price, which is 0.6 * $1.08 = $0.648.
 The sixth glass costs 60% of the price, which is 0.6 * $0.648 = $0.3888.
 The seventh glass costs 60% of the price, which is 0.6 * $0.3888 = $0.2333.
 The eighth glass costs 60% of the price, which is 0.6 * $0.2333 = $0.13998.
-The ninth glass costs 60% of the price, which is 0.6 * $0.13998 =",[invalid],0.0,$0.13998,0.0,256,False
+The ninth glass costs 60% of the price, which is 0.6 * $0.13998 = $0.08399.
+The tenth glass costs 60% of the price, which is 0.6 * $0.08399 = $0.050394.
+The eleventh glass costs 60% of the price, which is 0.6 * $0.050394 = $0.030236.
+The twelfth glass costs 60% of the price, which is 0.6 * $0.030236 = $0.0181416.
+The thirteenth glass costs 60% of the price, which is 0.6 * $0.0181416 = $0.01088496.
+The fourteenth glass costs 60% of the price, which is 0.6 * $0.01088496 = $0.006530976.
+The fifteenth glass costs 60% of the price, which is 0.6 * $0.006530976 = $0.0039185856.
+The sixteenth glass costs 60% of the price, which is 0.6 * $0.0039185856 = $0.00235115136.
+To find the total cost, we add up all the individual costs: $5 + $3 + $1.80 + $1.08 + $0.648 + $0.3888 + $0.2333 + $0.13998 + $0.1089 + $0.0504 + $0.0302 + $0.0181 + $0.0108 + $0.0065 + $0.0039 + $0.00235115136.
+The total cost is approximately $5 + $3 + $1.80 + $1.08 + $0.648 + $0.3888 + $0.2333 + $0.13998 + $0.1089 + $0.0504 + $0.0302 + $0.0181 + $0.0108 + $0.0065 + $0.0039 + $0.00235115136 = $10.00.
+#### 10
+The answer is: 10",[invalid],0.0,10,0.0,849,False
 6,260,"If Seattle has 20 sheep, then Charleston has 4 times as many sheep as Seattle, so Charleston has 4 * 20 = 80 sheep.
 If Toulouse has twice as many sheep as Charleston, then Toulouse has 2 * 80 = 160 sheep.
 Together, Toulouse, Charleston, and Seattle have 20 + 80 + 160 = 260 sheep.
@@ -762,7 +773,11 @@ Lylah's salary four years ago was $40000.
 Four years later, Lylah's salary increased by 30%.
 So, his salary four years later was $40000 + 0.30 * $40000 = $40000 + $12000 = $52000.
 Four years later, Lylah's salary was $52000.
-Four years",[invalid],0.0,$52000.,0.0,256,False
+Four years later, Lylah's salary increased by 40%.
+So, his salary four years later was $52000 + 0.40 * $52000 = $52000 + $20800 = $72800.
+The total salary the two were receiving four years later is $72800 + $72800 = $145600.
+#### 145600
+The answer is: 145600",[invalid],0.0,145600,0.0,372,False
 120,240,"Miguel uses 2 pads of paper a week, so he uses 2 x 30 = 60 sheets of paper each week.
 There are 4 weeks in a month, so he uses 60 x 4 = 240 sheets of paper every month.
 #### 240
@@ -953,7 +968,7 @@ Tim lives 2 miles away from the school, and he can ride his skateboard at 264 fe
 The winner will be waiting at their house for the loser to finish the race, so the winner will wait for 36 feet per minute - 38 feet per minute = -2 feet per minute.
 Since the winner is waiting for the loser to finish the race, the winner will wait for 1 minute - (-2 feet per minute) = 1 minute + 2 feet per minute = 3 minutes.
 #### 3
-The answer",[invalid],0.0,3,0.0,256,False
+The answer is: 3",[invalid],0.0,3,0.0,260,False
 151,5,"On the first day, 5 people came by to get both tires inflated, so 5 x 2 = 10 tires were inflated.
 On the second day, 3 people came by to get all their tricycle tires inflated, so 3 x 3 = 9 tricycle tires were inflated.
 On the third day, 1 person came by on a unicycle, so 1 x 1 = 1 unicycle tire was inflated.
@@ -975,7 +990,15 @@ Three pigeons ate 3 * 3 = 9 fries, so there were (x - 14)/2 - 9 fries left.
 A raccoon ate two-thirds of the remaining fries, so there were (x - 14)/2 - 9 - (2/3) * ((x - 14)/2 - 9) fries left.
 Ants carried off a final fries, so there were (x - 14)/2 - 9 - (2/3) * ((x - 14)/2 - 9) - 1 fries left.
 We know that there were 5 fries left, so we can set up the equation: (x - 14)/2 - 9 - (2/3) * ((x - 14)/2 - 9) - 1 = 5.
-Simplifying the equation, we get: (x - 14)/2 - ",[invalid],0.0,2,0.0,256,False
+Simplifying the equation, we get: (x - 14)/2 - 9 - (2/3) * ((x - 14)/2 - 9) - 1 = 5.
+Multiplying through by 6 to clear the fractions, we get: 3(x - 14) - 54 - 4((x - 14)/2 - 9) - 6 = 30.
+Expanding and simplifying, we get: 3x - 42 - 54 - 2(x - 14) - 36 - 6 = 30.
+Combining like terms, we get: 3x - 42 - 54 - 2x + 28 - 36 - 6 = 30.
+Simplifying further, we get: x - 46 = 30.
+Adding 46 to both sides, we get: x = 76.
+Therefore, the number of french fries in the pack when Dave bought it is 76.
+#### 76
+The answer is: 76",[invalid],0.0,76,0.0,478,False
 154,272,"On Mondays, Wednesdays, and Fridays, Kimo has three 1-hour classes each day, so he spends 3 * 1 = 3 hours each day.
 On Tuesdays and Thursdays, Kimo has two 2-hour classes each day, so he spends 2 * 2 = 4 hours each day.
 In total, Kimo spends 3 + 3 + 3 + 4 + 4 = 17 hours each week.
@@ -989,7 +1012,8 @@ To find the total length of all the baked goods, we need to convert the inches t
 The total length of the croissants is 720 / 12 = 60 feet.
 The total length of the baguettes is 120 feet.
 Therefore, the total length of all the baked goods is 100 + 60 + 120 = 280 feet.
-#### 2",[invalid],0.0,2,0.0,256,False
+#### 280
+The answer is: 280",[invalid],0.0,280,1.0,267,False
 156,1400,"The zookeeper feeds the monkeys 200 bananas every month, so for 2 months, he will need 200 x 2 = 400 bananas.
 The zookeeper feeds the gorillas 400 bananas every month, so for 2 months, he will need 400 x 2 = 800 bananas.
 The zookeeper feeds the baboons 100 bananas every month, so for 2 months, he will need 100 x 2 = 200 bananas.
@@ -1135,7 +1159,7 @@ Zaid gives his daughter 200$ to use for her weekly expenses and his wife 700$ to
 The total amount of money he gives away is 200 + 700 = 900$.
 After all these expenses and donations, Zaid will still have 6000 - 1500 - 2000 - 1250 - 900 = 1000$.
 #### 1000
-The",[invalid],0.0,1000,0.0,256,False
+The answer is: 1000",[invalid],0.0,1000,0.0,264,False
 178,122,"If Bo has 40 crabs, then Monic has 40 - 4 = 36 crabs.
 And Rani has 36 + 10 = 46 crabs.
 The total number of crabs the three have together is 40 + 36 + 46 = 122 crabs.
@@ -1174,7 +1198,10 @@ The first runner of the slower team will run their 400 meter leg in 55 seconds.
 The second runner will run their 400 meter leg in 55 + 3 = 58 seconds.
 The third runner will run their 400 meter leg in 58 + 3 = 61 seconds.
 The fourth runner will run their 400 meter leg in 61 + 3 = 64 seconds.
-The total time for the slower team to complete their 400 meter leg is 55 + 5",[invalid],0.0,5,0.0,256,False
+The total time for the slower team to complete their 400 meter leg is 55 + 58 + 61 + 64 = 238 seconds.
+The faster team will win by 258 - 238 = 20 seconds.
+#### 20
+The answer is: 20",[invalid],0.0,20,0.0,305,False
 184,25,"The probability of rolling a number greater than 3 on a six-sided die is $\frac{3}{6} = \frac{1}{2}$.
 The probability of rolling two even numbers in a row is $\left(\frac{1}{2}\right)^2 = \frac{1}{4}$.
 Therefore, the probability of rolling a number greater than 3 is $\frac{1}{2} - \frac{1}{4} = \frac{1}{4}$.
@@ -1877,7 +1904,47 @@ The oldest son is 8 years old, so the youngest son is 4 years old.
 The oldest son is 8 years old, so the youngest son is 4 years old.
 The oldest son is 8 years old, so the youngest son is 4 years old.
 The oldest son is 8 years old, so the youngest son is 4 years old.
-The oldest son is",[invalid],0.0,4,0.0,256,False
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest son is 4 years old.
+The oldest son is 8 years old, so the youngest",[invalid],0.0,8,0.0,1024,True
 295,370,"On the first day, Darren does 100 pushups, 50 squats, and 20 dumbbell presses.
 On the second day, he does 20 more pushups than on the first day, so he does 100 + 20 = 120 pushups.
 He also does ten fewer squats than on the first day, so he does 50 - 10 = 40 squats.
@@ -2121,7 +2188,10 @@ The state will charge a 20% tax rate, so Nick will have a net pay of $30,000 - (
 For Job B, Nick will earn $42,000 per year.
 The state will charge a $6,000 property tax, so Nick will have a net pay of $42,000 - $6,000 = $36,000.
 The state will also charge a 10% tax rate on net income after property tax, so Nick will have a net pay of $36,000 - ($36,000 x 0.10) = $32,400.
-To find out how much more money Nick will make at the job with a higher net pay rate, we subtract the net pay of Job A from the net pay of Job B: $32,400 - $24,000 = $8,400",[invalid],0.0,"$8,400",1.0,256,False
+To find out how much more money Nick will make at the job with a higher net pay rate, we subtract the net pay of Job A from the net pay of Job B: $32,400 - $24,000 = $8,400.
+Therefore, Nick will make $8,400 more at the job with a higher net pay rate compared to the other job.
+#### 8400
+The answer is: 8400",[invalid],0.0,8400,1.0,300,False
 332,44,"40 percent of the castles are ruins, so 40/100 * 220 = 88 castles are ruins.
 Half of the ruined castles are unmanned, so 88/2 = 44 castles are unmanned.
 Therefore, there are 44 unmanned ruined castles in Scotland.
@@ -2362,7 +2432,10 @@ Therefore, the number of customers kicked out for refusing to wear masks is 6.
 The number of customers kicked out for shoplifting is 4(6) - 5 = 21.
 The number of customers kicked out for physical violence over goods on sale is 3(21) = 63.
 The total number of people kicked out is 6 + 21 + 63 = 90.
-However, the total number of",[invalid],0.0,90.,0.0,256,False
+However, the total number of people kicked out is 50, so there must be some other reason for the kickouts.
+Therefore, the number of people kicked out for other reasons is 50 - 90 = -40.
+Since the number of people kicked out cannot be negative, there must be an error in the calculation.
+The correct answer is: 0",[invalid],0.0,0,0.0,327,False
 368,18,"Erin scored 14 points, and Sara scored 8 points.
 Erin has three times more points than Sara, so Erin has 8 * 3 = 24 points.
 To find out how many points Erin had before, we need to subtract the points she scored from the current total.
@@ -2666,7 +2739,33 @@ Substituting D = 180 - C into C = 304 - D, we get C = 304 - (180 - C).
 Simplifying, we get C = 304 - 180 + C.
 Subtracting C from both sides, we get 0 = 124.
 This is a contradiction, so there must be an error in the problem statement.
-The correct answer is: 180 - C = 180 - (304 - D) = 180 - 304 + D = D",[invalid],0.0,304,0.0,256,False
+The correct answer is: 180 - C = 180 - (304 - D) = 180 - 304 + D = D - 124.
+Since D - 124 = 180 - C, we have D - 124 = 180 - C.
+Substituting D = 180 - C into D - 124 = 180 - C, we get 180 - C - 124 = 180 - C.
+Simplifying, we get 56 - C = 180 - C.
+Subtracting C from both sides, we get 56 = 180.
+This is a contradiction, so there must be an error in the problem statement.
+The correct answer is: 180 - C = 180 - (304 - D) = 180 - 304 + D = D - 124.
+Since D - 124 = 180 - C, we have D - 124 = 180 - C.
+Substituting D = 180 - C into D - 124 = 180 - C, we get 180 - C - 124 = 180 - C.
+Simplifying, we get 56 - C = 180 - C.
+Subtracting C from both sides, we get 56 = 180.
+This is a contradiction, so there must be an error in the problem statement.
+The correct answer is: 180 - C = 180 - (304 - D) = 180 - 304 + D = D - 124.
+Since D - 124 = 180 - C, we have D - 124 = 180 - C.
+Substituting D = 180 - C into D - 124 = 180 - C, we get 180 - C - 124 = 180 - C.
+Simplifying, we get 56 - C = 180 - C.
+Subtracting C from both sides, we get 56 = 180.
+This is a contradiction, so there must be an error in the problem statement.
+The correct answer is: 180 - C = 180 - (304 - D) = 180 - 304 + D = D - 124.
+Since D - 124 = 180 - C, we have D - 124 = 180 - C.
+Substituting D = 180 - C into D - 124 = 180 - C, we get 180 - C - 124 = 180 - C.
+Simplifying, we get 56 - C = 180 - C.
+Subtracting C from both sides, we get 56 = 180.
+This is a contradiction, so there must be an error in the problem statement.
+The correct answer is: 180 - C = 180 - (304 - D) = 180 - 304 + D = D - 124.
+Since D - 124 = 180 - C, we have D - 124 = 180 - C.
+Substituting D = 180 - C into D - 124 = 180 - C, we",[invalid],0.0,180,0.0,1024,True
 417,3140,"In the first 4 days, Tom traveled 200 kilometers every day, so he traveled a total of 200 x 4 = 800 kilometers.
 Over the next two days, he traveled 30% of the distance traveled over the first four days, which is 30/100 x 800 = 240 kilometers.
 In total, during the first two days, Tom traveled 800 + 240 = 1040 kilometers.
@@ -3052,7 +3151,9 @@ Using the principle of inclusion-exclusion, we have:
 $|D \cup P \cup B| = |D| + |P| + |B| - |D \cap P| - |D \cap B| - |P \cap B| + |D \cap P \cap B|$.
 We know that $|D \cap P| = 6$, $|D \cap B| = 3$, and $|P \cap B| = 3$.
 Substituting these values, we have:
-$|D \cup P \cup B| = 9 + 6 + 3 - 6 - 3 - 3 + ",[invalid],0.0,3,0.0,256,False
+$|D \cup P \cup B| = 9 + 6 + 3 - 6 - 3 - 3 + 3 = 15$.
+Therefore, the number of kids not allergic to anything is $32 - 15 = \boxed{17}$.
+The answer is: 17",[invalid],0.0,17,0.0,296,False
 478,621,"There are 3 groups of 200 employees, so there are a total of 3 x 200 = 600 employees going on the tour.
 Each group was assigned 7 tour guides, so there are a total of 3 x 7 = 21 tour guides.
 Therefore, the total number of people going on this tour is 600 + 21 = 621.
@@ -3138,7 +3239,44 @@ After the coupon, the total cost is $6.00.
 Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
 After the coupon, the total cost is $6.00.
 Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
-After the",[invalid],0.0,$8.00.,0.0,256,False
+After the coupon, the total cost is $6.00.
+Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
+After the coupon, the total cost is $6.00.
+Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
+After the coupon, the total cost is $6.00.
+Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
+After the coupon, the total cost is $6.00.
+Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
+After the coupon, the total cost is $6.00.
+Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
+After the coupon, the total cost is $6.00.
+Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
+After the coupon, the total cost is $6.00.
+Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
+After the coupon, the total cost is $6.00.
+Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
+After the coupon, the total cost is $6.00.
+Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
+After the coupon, the total cost is $6.00.
+Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
+After the coupon, the total cost is $6.00.
+Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
+After the coupon, the total cost is $6.00.
+Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
+After the coupon, the total cost is $6.00.
+Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
+After the coupon, the total cost is $6.00.
+Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
+After the coupon, the total cost is $6.00.
+Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
+After the coupon, the total cost is $6.00.
+Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
+After the coupon, the total cost is $6.00.
+Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
+After the coupon, the total cost is $6.00.
+Since she buys 2 packs, she will have a total of 2 x $4.00 = $8.00.
+After the coupon, the total cost is $6.00.
+",[invalid],0.0,$6.00.,0.0,1024,True
 494,21,"Out of the 10 cheerleaders, 9 are 64"" tall, so 1 cheerleader is 60"" tall.
 The 10th cheerleader is 60"" tall, so the total height of the 10 cheerleaders is 9 * 64 + 1 * 60 = 600"" + 60"" = 660"".
 The pyramid has 4 girls on the bottom, 3 on top of the 4, 2 on top of the 3, and the shortest girl at the top.
@@ -3223,7 +3361,49 @@ If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
 The total cost of the 2 x 4 piece of wood is $4.
 If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
 The total cost of the 2 x 4 piece of wood is $4.
-If he buys the cheapest lumber, he can make 200 pops",[invalid],0.0,200,0.0,256,False
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber, he can make 200 popsicle sticks from it.
+The total cost of the 2 x 4 piece of wood is $4.
+If he buys the cheapest lumber",[invalid],0.0,$4.,0.0,1024,True
 506,144,"Mario has 6 sled dogs, and each dog has 4 legs, so the total number of legs is 6 * 4 = 24 legs.
 Each pair of snowshoes costs $12.00, so the total cost to buy snowshoes for all the dogs is 24 legs / 2 pairs = 12 pairs.
 Therefore, it will cost Mario $12.00 * 12 pairs = $144.00 to buy snowshoes for all of his dogs.
@@ -3747,7 +3927,10 @@ B = 2250
 Now, we can find the number of red and green jelly beans:
 R = 0.99B = 0.99 * 2250 = 2202.5
 G = 1.01B = 1.01 * 2250 = 2272.5
-The difference between the number of green and red jelly beans is G - R = 2272.5 - 2202.5 = 70",[invalid],0.0,70,0.0,256,False
+The difference between the number of green and red jelly beans is G - R = 2272.5 - 2202.5 = 70
+Therefore, the jar contains 70 more green jelly beans than red jelly beans.
+#### 70
+The answer is: 70",[invalid],0.0,70,0.0,286,False
 588,52,"Jared's typing speed increased from 47 WPM to 52 WPM, so he increased his speed by 52 - 47 = 5 WPM.
 If he continues to increase his speed by 5 words, his new speed will be 52 + 5 = 57 WPM.
 To find the average of the three measurements, we add up the three speeds and divide by 3.
@@ -3870,7 +4053,24 @@ If each tire can undergo 10,440,000 rotations, then the number of years before t
 To convert this to years, we multiply by 12 months/year: 0.000019 years * 12 months/year = 0.000228 months.
 To convert this to years, we multiply by 12 months/year: 0.000228 months * 12 months/year = 0.002736 years.
 To convert this to years, we multiply by 12 months/year: 0.002736 years * 12 months/year = 0.032832 years.
-To convert this to years, we multiply by 12 months/year: 0.032832 years * 1",[invalid],0.0,1,0.0,256,False
+To convert this to years, we multiply by 12 months/year: 0.032832 years * 12 months/year = 0.394 year.
+To convert this to years, we multiply by 12 months/year: 0.394 year * 12 months/year = 4.728 months.
+To convert this to years, we multiply by 12 months/year: 4.728 months * 12 months/year = 56.736 months.
+To convert this to years, we multiply by 12 months/year: 56.736 months * 12 months/year = 680.832 months.
+To convert this to years, we multiply by 12 months/year: 680.832 months * 12 months/year = 8170 months.
+To convert this to years, we multiply by 12 months/year: 8170 months * 12 months/year = 98040 months.
+To convert this to years, we multiply by 12 months/year: 98040 months * 12 months/year = 1176480 months.
+To convert this to years, we multiply by 12 months/year: 1176480 months * 12 months/year = 14117760 months.
+To convert this to years, we multiply by 12 months/year: 14117760 months * 12 months/year = 169413120 months.
+To convert this to years, we multiply by 12 months/year: 169413120 months * 12 months/year = 2032957440 months.
+To convert this to years, we multiply by 12 months/year: 2032957440 months * 12 months/year = 24395489280 months.
+To convert this to years, we multiply by 12 months/year: 24395489280 months * 12 months/year = 292745871360 months.
+To convert this to years, we multiply by 12 months/year: 292745871360 months * 12 months/year = 3512950456320 months.
+To convert this to years, we multiply by 12 months/year: 3512950456320 months * 12 months/year = 42155405475840 months.
+To convert this to years, we multiply by 12 months/year: 42155405475840 months * 12 months/year = 505864865710080 months.
+To convert this to years, we multiply by 12 months/year: 505864865710080 months * 12 months/year = 6070378388520960 months.
+To convert this to years, we multiply by 12 months/year: 6070378388520960 months * 12 months/year = 72844540662251520 months.
+To convert this to years, we multiply by 12 months/year: 72",[invalid],0.0,72,0.0,1024,True
 607,10,"The jumbo bottle of shampoo costs $24.00 and it can be used for 120 washings.
 If Jackie only uses 1 pump per wash, then she will need 120 pumps.
 The cost of each pump is $24.00 / 120 = $0.20.
@@ -4105,7 +4305,43 @@ If the bag of flour is divided into portions, then the weight of each portion is
 If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
 If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
 If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
-If the bag",[invalid],0.0,2,0.0,256,False
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each portion is 2 kilograms.
+If the bag of flour is divided into portions, then the weight of each",[invalid],0.0,2,0.0,1024,True
 646,79,"Alisa biked at 12 miles per hour for 4.5 hours, so she biked a total of 12 * 4.5 = 54 miles.
 Stanley biked at 10 miles per hour for 2.5 hours, so he biked a total of 10 * 2.5 = 25 miles.
 In total, Alisa and Stanley biked 54 + 25 = 79 miles.
@@ -4460,7 +4696,32 @@ The group has 20 seats, so they need 20 * 6 = 120 seats in total.
 Each seat has enough room to hold one person, two drinks, and three snacks, so each seat can hold 1 + 2 + 3 = 6 people.
 The group has 20 seats, so they need 20 * 6 = 120 seats in total.
 Each seat has enough room to hold one person, two drinks, and three snacks, so each seat can hold 1 + 2 + 3 = 6 people.
-The",[invalid],0.0,6,0.0,256,False
+The group has 20 seats, so they need 20 * 6 = 120 seats in total.
+Each seat has enough room to hold one person, two drinks, and three snacks, so each seat can hold 1 + 2 + 3 = 6 people.
+The group has 20 seats, so they need 20 * 6 = 120 seats in total.
+Each seat has enough room to hold one person, two drinks, and three snacks, so each seat can hold 1 + 2 + 3 = 6 people.
+The group has 20 seats, so they need 20 * 6 = 120 seats in total.
+Each seat has enough room to hold one person, two drinks, and three snacks, so each seat can hold 1 + 2 + 3 = 6 people.
+The group has 20 seats, so they need 20 * 6 = 120 seats in total.
+Each seat has enough room to hold one person, two drinks, and three snacks, so each seat can hold 1 + 2 + 3 = 6 people.
+The group has 20 seats, so they need 20 * 6 = 120 seats in total.
+Each seat has enough room to hold one person, two drinks, and three snacks, so each seat can hold 1 + 2 + 3 = 6 people.
+The group has 20 seats, so they need 20 * 6 = 120 seats in total.
+Each seat has enough room to hold one person, two drinks, and three snacks, so each seat can hold 1 + 2 + 3 = 6 people.
+The group has 20 seats, so they need 20 * 6 = 120 seats in total.
+Each seat has enough room to hold one person, two drinks, and three snacks, so each seat can hold 1 + 2 + 3 = 6 people.
+The group has 20 seats, so they need 20 * 6 = 120 seats in total.
+Each seat has enough room to hold one person, two drinks, and three snacks, so each seat can hold 1 + 2 + 3 = 6 people.
+The group has 20 seats, so they need 20 * 6 = 120 seats in total.
+Each seat has enough room to hold one person, two drinks, and three snacks, so each seat can hold 1 + 2 + 3 = 6 people.
+The group has 20 seats, so they need 20 * 6 = 120 seats in total.
+Each seat has enough room to hold one person, two drinks, and three snacks, so each seat can hold 1 + 2 + 3 = 6 people.
+The group has 20 seats, so they need 20 * 6 = 120 seats in total.
+Each seat has enough room to hold one person, two drinks, and three snacks, so each seat can hold 1 + 2 + 3 = 6 people.
+The group has 20 seats, so they need 20 * 6 = 120 seats in total.
+Each seat has enough room to hold one person, two drinks, and three snacks, so each seat can hold 1 + 2 + 3 = 6 people.
+The group has 20 seats, so they need 20 * 6 = 120 seats in total.
+Each seat has enough room to hold one person, two",[invalid],0.0,120,0.0,1024,True
 702,2800,"Gissela's truck can haul 4,000 pounds of gravel.
 Gordy's truck can haul 800 pounds more than Gissela's truck, so it can haul 4,000 + 800 = 4,800 pounds of gravel.
 When Gary joins Gissela and Gordy, the three trucks combined can haul a total of 11,600 pounds of gravel.
@@ -4515,7 +4776,10 @@ He also ordered 4 cinnamon rolls at $2.50 each, so the total cost of the cinnamo
 He ordered 3 mini quiches at $4.00 each, so the total cost of the mini quiches is 3 * $4.00 = $12.00.
 He ordered 13 blueberry muffins at $1.00 each, so the total cost of the blueberry muffins is 13 * $1.00 = $13.00.
 The total cost of all the items is $15.00 + $10.00 + $12.00 + $13.00 = $50.00.
-Marcus shows his loyalty card that gives him 10% off of his purchase, so he gets a discount of 10% of $50.00, which is 10/100",[invalid],0.0,100,0.0,256,False
+Marcus shows his loyalty card that gives him 10% off of his purchase, so he gets a discount of 10% of $50.00, which is 10/100 * $50.00 = $5.00.
+The total bill after the discount is $50.00 - $5.00 = $45.00.
+#### 45
+The answer is: 45",[invalid],0.0,45,1.0,309,False
 711,6,"If Erin had $6.00 and each scoop of ice cream cost $1.50, then she could buy 6.00 / 1.50 = 4 scoops of ice cream.
 Since buy 2 scoops get 1 scoop free, Erin would need to buy 4 scoops and get 2 free, for a total of 4 + 2 = 6 scoops.
 Therefore, Erin should buy 6 scoops of ice cream.
@@ -4717,7 +4981,34 @@ Since 40% of the students in each class are girls, we can set up the equation 0.
 Dividing both sides of the equation by 0.4, we find that x = 250.
 Therefore, each class has 250 students.
 Since 40% of the students in each class are girls, we can set up the equation 0.4x = 250.
-Dividing both sides of the equation by 0.4,",[invalid],0.0,"0.4,",0.0,256,False
+Dividing both sides of the equation by 0.4, we find that x = 625.
+Therefore, each class has 625 students.
+Since 40% of the students in each class are girls, we can set up the equation 0.4x = 625.
+Dividing both sides of the equation by 0.4, we find that x = 1562.5.
+Therefore, each class has 1562.5 students.
+Since 40% of the students in each class are girls, we can set up the equation 0.4x = 1562.5.
+Dividing both sides of the equation by 0.4, we find that x = 3906.25.
+Therefore, each class has 3906.25 students.
+Since 40% of the students in each class are girls, we can set up the equation 0.4x = 3906.25.
+Dividing both sides of the equation by 0.4, we find that x = 9765.625.
+Therefore, each class has 9765.625 students.
+Since 40% of the students in each class are girls, we can set up the equation 0.4x = 9765.625.
+Dividing both sides of the equation by 0.4, we find that x = 24414.0625.
+Therefore, each class has 24414.0625 students.
+Since 40% of the students in each class are girls, we can set up the equation 0.4x = 24414.0625.
+Dividing both sides of the equation by 0.4, we find that x = 61035.15625.
+Therefore, each class has 61035.15625 students.
+Since 40% of the students in each class are girls, we can set up the equation 0.4x = 61035.15625.
+Dividing both sides of the equation by 0.4, we find that x = 152587.890625.
+Therefore, each class has 152587.890625 students.
+Since 40% of the students in each class are girls, we can set up the equation 0.4x = 152587.890625.
+Dividing both sides of the equation by 0.4, we find that x = 381474.7265625.
+Therefore, each class has 381474.7265625 students.
+Since 40% of the students in each class are girls, we can set up the equation 0.4x = 381474.7265625.
+Dividing both sides of the equation by 0.4, we find that x = 953686.81640625.
+Therefore, each class has 953686.81640625 students.
+Since 40% of the students in each class are girls, we can set up the equation 0.4x = 953686.81640625.
+Dividing both sides of the equation by 0.4, we find that",[invalid],0.0,"0.4,",0.0,1024,True
 743,8,"Mara initially had 2 slices of cake on the plate.
 She added 3 slices, so she now has a total of 2 + 3 = 5 slices.
 She tripled the number of slices she currently has, so she now has 5 * 3 = 15 slices.
@@ -4981,7 +5272,11 @@ Let's simplify and solve for x:
 -14 + x = 8 + 2x
 To isolate x, we subtract x from both sides of the equation:
 -14 = 8 + x
-To solve for x, we subtract 8",[invalid],0.0,8,0.0,256,False
+To solve for x, we subtract 8 from both sides of the equation:
+-22 = x
+So Bob bought 22 white fish at the store.
+#### 22
+The answer is: 22",[invalid],0.0,22,0.0,293,False
 784,15,"Andy's car fuel efficiency is 10 MPG, so he uses 1/10 of a gallon of gas per mile.
 The one-way distance between his home and office is 5 miles, so he uses 5/10 = 1/2 gallon of gas.
 The current price for regular gas is $3/gallon, so he spends 1/2 * $3 = $1.50 per week on gas.
@@ -5287,7 +5582,10 @@ The answer is: 1200",[invalid],0.0,1200,0.0,175,False
 The cost of installing the shelves is $129.00 + ($129.00 * 2 shelves) = $129.00 + $258.00 = $387.00
 The cost of installing the chandelier is $129.00 + ($129.00 * 1 chandelier) = $129.00 + $129.00 = $258.00
 The cost of installing the pictures is $129.00 + ($129.00 * 10 pictures) = $129.00 + $1290.00 = $1419.00
-The cost of installing additional items is $15.00 * (6 mirrors + 2 chandeliers + 20 pictures) = $15.00 * 28 = $4",[invalid],0.0,$4,0.0,256,False
+The cost of installing additional items is $15.00 * (6 mirrors + 2 chandeliers + 20 pictures) = $15.00 * 28 = $420.00
+The total cost for Angela is $645.00 + $387.00 + $258.00 + $1419.00 + $420.00 = $1,629.00
+#### 1629
+The answer is: 1629",[invalid],0.0,1629,0.0,335,False
 832,42,"Anthony has saved $10.00 more than Eva, so Anthony has saved $10.00 + $20.00 = $30.00
 Roy has saved 40% more than Anthony, so Roy has saved $30.00 + ($30.00 * 40%) = $30.00 + $12.00 = $42.00
 Therefore, Roy has $42.00.
@@ -5683,7 +5981,7 @@ Since Tasha made $6 for her work, we can set up the equation 8x = 80 - 6 = 74.
 Solving for x, we find that x = 9.5.
 Therefore, Tasha made $80 from lemonade sales.
 #### 80
-The answer is:",[invalid],0.0,80,0.0,256,False
+The answer is: 80",[invalid],0.0,80,0.0,259,False
 895,74,"Carl's weight is 16 kg more than Martin's weight, so Carl's weight is 55 + 16 = 71 kg.
 Christian's weight is 8 kg more than Carl's weight, so Christian's weight is 71 + 8 = 79 kg.
 Harry's weight is 5 kg less than Christian's weight, so Harry's weight is 79 - 5 = 74 kg.
@@ -5916,7 +6214,7 @@ Therefore, John's age is 20 years old.
 Paul's age is x + 10 = 20 + 10 = 30 years old.
 Peter's age is 2x + 10 = 2(20) + 10 = 50 years old.
 #### 50
-The answer is: 5",[invalid],0.0,5,0.0,256,False
+The answer is: 50",[invalid],0.0,50,1.0,257,False
 932,24,"Maria gave each of her friends 2 water balloons, so she gave 4 x 2 = 8 water balloons to her friends.
 She had one water balloon for herself, so she had a total of 8 + 1 = 9 water balloons.
 Her mom came out and gave each person 3 more balloons, so she gave 4 x 3 = 12 more balloons.
@@ -5942,7 +6240,8 @@ If Fern runs the Widgeteer 3000 for 24 hours a day for 30 days, it will make 144
 If Fern runs the WidgetMaster 9000 for 24 hours a day for 30 days, it will make 1080 * 30 = 32400 widgets.
 The difference in the number of widgets made is 43200 - 32400 = 10800 widgets.
 Since each widget sells for $6, Fern will make 10800 * $6 = $64800 more from the Widgeteer 3000 vs. the WidgetMaster 9000.
-#### 6",[invalid],0.0,6,0.0,256,False
+#### 64800
+The answer is: 64800",[invalid],0.0,64800,1.0,271,False
 936,250,"Cameron arrives at 5 pm and wants to leave at 10 am the next morning, so he has a total of 5 hours to stay.
 The hotel charges 1000 pesos for a 12-hour stay, so Cameron would pay 1000 pesos for the first 12 hours.
 After the 12-hour mark, Cameron has 5 hours to stay, so he can add 70 pesos for every additional hour.
@@ -5952,7 +6251,40 @@ In total, Cameron would pay 1000 pesos for the 12-hour stay.
 He wants to leave at 10 am the next morning, so he has 5 hours to stay.
 He can add 70 pesos for every additional hour, so he can add 70 pesos for every 5 hours.
 He has 5 - 12 = -7 hours to stay after the 12-hour mark, so he cannot add any additional pesos.
-Therefore, Cameron would",[invalid],0.0,12,0.0,256,False
+Therefore, Cameron would pay 1000 pesos for the 12-hour stay.
+In total, Cameron would pay 1000 pesos for the 12-hour stay.
+He wants to leave at 10 am the next morning, so he has 5 hours to stay.
+He can add 70 pesos for every additional hour, so he can add 70 pesos for every 5 hours.
+He has 5 - 12 = -7 hours to stay after the 12-hour mark, so he cannot add any additional pesos.
+Therefore, Cameron would pay 1000 pesos for the 12-hour stay.
+In total, Cameron would pay 1000 pesos for the 12-hour stay.
+He wants to leave at 10 am the next morning, so he has 5 hours to stay.
+He can add 70 pesos for every additional hour, so he can add 70 pesos for every 5 hours.
+He has 5 - 12 = -7 hours to stay after the 12-hour mark, so he cannot add any additional pesos.
+Therefore, Cameron would pay 1000 pesos for the 12-hour stay.
+In total, Cameron would pay 1000 pesos for the 12-hour stay.
+He wants to leave at 10 am the next morning, so he has 5 hours to stay.
+He can add 70 pesos for every additional hour, so he can add 70 pesos for every 5 hours.
+He has 5 - 12 = -7 hours to stay after the 12-hour mark, so he cannot add any additional pesos.
+Therefore, Cameron would pay 1000 pesos for the 12-hour stay.
+In total, Cameron would pay 1000 pesos for the 12-hour stay.
+He wants to leave at 10 am the next morning, so he has 5 hours to stay.
+He can add 70 pesos for every additional hour, so he can add 70 pesos for every 5 hours.
+He has 5 - 12 = -7 hours to stay after the 12-hour mark, so he cannot add any additional pesos.
+Therefore, Cameron would pay 1000 pesos for the 12-hour stay.
+In total, Cameron would pay 1000 pesos for the 12-hour stay.
+He wants to leave at 10 am the next morning, so he has 5 hours to stay.
+He can add 70 pesos for every additional hour, so he can add 70 pesos for every 5 hours.
+He has 5 - 12 = -7 hours to stay after the 12-hour mark, so he cannot add any additional pesos.
+Therefore, Cameron would pay 1000 pesos for the 12-hour stay.
+In total, Cameron would pay 1000 pesos for the 12-hour stay.
+He wants to leave at 10 am the next morning, so he has 5 hours to stay.
+He can add 70 pesos for every additional hour, so he can add 70 pesos for every 5 hours.
+He has 5 - 12 = -7 hours to stay after the 12-hour mark, so he cannot add any additional pesos.
+Therefore, Cameron would pay 1000 pesos for the 12-hour stay.
+In total, Cameron would pay 1000 pesos for the 12-hour stay.
+He wants to leave at 10 am the next morning, so he has 5 hours to stay.
+He can add 70 pesos for every",[invalid],0.0,70,0.0,1024,True
 937,159,"Each goat needs 5 pounds of hay.
 Each sheep needs 3 pounds less than twice the amount each goat needs, so each sheep needs 2 * 5 - 3 = 7 pounds of hay.
 There are 15 goats, so the total amount of hay needed for the goats is 15 * 5 = 75 pounds.
@@ -6057,7 +6389,10 @@ To find out how many minutes she slept on her bed, we need to subtract the time 
 From 10 p.m. to 6 a.m. is 14 hours, so 14 hours - 5 minutes = 13 hours and 5 minutes.
 To convert 13 hours and 5 minutes to minutes, we multiply 13 hours by 60 minutes per hour, which gives us 780 minutes.
 To find out how many minutes she slept on her bed, we subtract the time she woke up from the total time she went to sleep.
-From 2:15 am to 2",[invalid],0.0,2,0.0,256,False
+From 2:15 am to 2:38 am is 23 minutes.
+So, she slept on her bed for 780 minutes - 23 minutes = 757 minutes.
+#### 757
+The answer is: 757",[invalid],0.0,757,0.0,305,False
 954,34,"Jonathan has 2/3 as many measuring spoons as measuring cups, so he has 2/3 * 24 = 16 measuring spoons.
 If he has two dozen cups, that means he has 2 * 12 = 24 cups.
 If he has 16 measuring spoons, then he has 24 + 16 = 40 utensils in total.
@@ -6090,7 +6425,31 @@ If Kelly was right, then the actual number of people in attendance is 48 + (20/1
 Since the number of people cannot be fractional, we must have made a mistake in the calculation.
 If Kelly was right, then the actual number of people in attendance is 48 + (20/100)*48 = 48 + 9.6 = 57.6
 Since the number of people cannot be fractional, we must have made a mistake in the calculation.
-If Kelly was right, then the actual number of people in attendance is 48 + (20/100)*4",[invalid],0.0,4,0.0,256,False
+If Kelly was right, then the actual number of people in attendance is 48 + (20/100)*48 = 48 + 9.6 = 57.6
+Since the number of people cannot be fractional, we must have made a mistake in the calculation.
+If Kelly was right, then the actual number of people in attendance is 48 + (20/100)*48 = 48 + 9.6 = 57.6
+Since the number of people cannot be fractional, we must have made a mistake in the calculation.
+If Kelly was right, then the actual number of people in attendance is 48 + (20/100)*48 = 48 + 9.6 = 57.6
+Since the number of people cannot be fractional, we must have made a mistake in the calculation.
+If Kelly was right, then the actual number of people in attendance is 48 + (20/100)*48 = 48 + 9.6 = 57.6
+Since the number of people cannot be fractional, we must have made a mistake in the calculation.
+If Kelly was right, then the actual number of people in attendance is 48 + (20/100)*48 = 48 + 9.6 = 57.6
+Since the number of people cannot be fractional, we must have made a mistake in the calculation.
+If Kelly was right, then the actual number of people in attendance is 48 + (20/100)*48 = 48 + 9.6 = 57.6
+Since the number of people cannot be fractional, we must have made a mistake in the calculation.
+If Kelly was right, then the actual number of people in attendance is 48 + (20/100)*48 = 48 + 9.6 = 57.6
+Since the number of people cannot be fractional, we must have made a mistake in the calculation.
+If Kelly was right, then the actual number of people in attendance is 48 + (20/100)*48 = 48 + 9.6 = 57.6
+Since the number of people cannot be fractional, we must have made a mistake in the calculation.
+If Kelly was right, then the actual number of people in attendance is 48 + (20/100)*48 = 48 + 9.6 = 57.6
+Since the number of people cannot be fractional, we must have made a mistake in the calculation.
+If Kelly was right, then the actual number of people in attendance is 48 + (20/100)*48 = 48 + 9.6 = 57.6
+Since the number of people cannot be fractional, we must have made a mistake in the calculation.
+If Kelly was right, then the actual number of people in attendance is 48 + (20/100)*48 = 48 + 9.6 = 57.6
+Since the number of people cannot be fractional, we must have made a mistake in the calculation.
+If Kelly was right, then the actual number of people in attendance is 48 + (20/100)*48 = 48 + 9.6 = 57.6
+Since the number of people cannot be fractional, we must have made a mistake in the calculation.
+If Kelly was right, then the actual number of people in attendance is 48 + (20/100)*48 = 48 + 9.6 = ",[invalid],0.0,9.6,0.0,1024,True
 959,7,"If Jason carried 2 balls, then Jeffrey carried 2/2 = 1 ball.
 Jordan carried twice as many balls as Jason, so Jordan carried 2 x 2 = 4 balls.
 The total number of balls carried by the three boys is 2 + 1 + 4 = 7 balls.
@@ -6135,7 +6494,38 @@ Dividing both sides by 10 * (number of episodes), we get 1 = 1/2.
 This equation is not true, so there must be an error in the setup.
 The correct equation should be 10 * (number of episodes) = 20 * (number of episodes) / 2.
 Simplifying this equation, we get 10 * (number of episodes) = 10 * (number of episodes) / 2.
-Dividing",[invalid],0.0,2.,0.0,256,False
+Dividing both sides by 10 * (number of episodes), we get 1 = 1/2.
+This equation is not true, so there must be an error in the setup.
+The correct equation should be 10 * (number of episodes) = 20 * (number of episodes) / 2.
+Simplifying this equation, we get 10 * (number of episodes) = 10 * (number of episodes) / 2.
+Dividing both sides by 10 * (number of episodes), we get 1 = 1/2.
+This equation is not true, so there must be an error in the setup.
+The correct equation should be 10 * (number of episodes) = 20 * (number of episodes) / 2.
+Simplifying this equation, we get 10 * (number of episodes) = 10 * (number of episodes) / 2.
+Dividing both sides by 10 * (number of episodes), we get 1 = 1/2.
+This equation is not true, so there must be an error in the setup.
+The correct equation should be 10 * (number of episodes) = 20 * (number of episodes) / 2.
+Simplifying this equation, we get 10 * (number of episodes) = 10 * (number of episodes) / 2.
+Dividing both sides by 10 * (number of episodes), we get 1 = 1/2.
+This equation is not true, so there must be an error in the setup.
+The correct equation should be 10 * (number of episodes) = 20 * (number of episodes) / 2.
+Simplifying this equation, we get 10 * (number of episodes) = 10 * (number of episodes) / 2.
+Dividing both sides by 10 * (number of episodes), we get 1 = 1/2.
+This equation is not true, so there must be an error in the setup.
+The correct equation should be 10 * (number of episodes) = 20 * (number of episodes) / 2.
+Simplifying this equation, we get 10 * (number of episodes) = 10 * (number of episodes) / 2.
+Dividing both sides by 10 * (number of episodes), we get 1 = 1/2.
+This equation is not true, so there must be an error in the setup.
+The correct equation should be 10 * (number of episodes) = 20 * (number of episodes) / 2.
+Simplifying this equation, we get 10 * (number of episodes) = 10 * (number of episodes) / 2.
+Dividing both sides by 10 * (number of episodes), we get 1 = 1/2.
+This equation is not true, so there must be an error in the setup.
+The correct equation should be 10 * (number of episodes) = 20 * (number of episodes) / 2.
+Simplifying this equation, we get 10 * (number of episodes) = 10 * (number of episodes) / 2.
+Dividing both sides by 10 * (number of episodes), we get 1 = 1/2.
+This equation is not true, so there must be an error in the setup.
+The correct equation should be 10 * (number of episodes) = 20 * (number of episodes) / 2.
+Simplifying this equation, we get ",[invalid],0.0,2.,0.0,1024,True
 965,374,"The bird flies southerly for 10 hours at a speed of 30 miles per hour, so it travels 10 * 30 = 300 miles.
 Then, the bird flies north for 2 hours at a speed of 18 miles per hour, so it travels 2 * 18 = 36 miles.
 Finally, the bird flies south for 5 hours at a speed of 22 miles per hour, so it travels 5 * 22 = 110 miles.
@@ -6228,7 +6618,11 @@ Simplifying this equation, we get D - 5 = D + B / 2.
 Multiplying both sides by 2, we get 2D - 10 = D + B.
 Subtracting D from both sides, we get D - 10 = B.
 So, the sum of the ages of Emil's dad and his brother now is D + B = D + (D - 10) = 2D - 10.
-Since Emil is 19 years old now, we know that D =",[invalid],0.0,19,0.0,256,False
+Since Emil is 19 years old now, we know that D = 19 + 5 = 24.
+Substituting this value into the equation, we get 2(24) - 10 = 48 - 10 = 38.
+Therefore, the sum of the ages of Emil's dad and his brother now is 38.
+#### 38
+The answer is: 38",[invalid],0.0,38,0.0,333,False
 980,90,"Adrianne's mother gave her 20 metallic beads.
 Her sister gave her 20 + 10 = 30 metallic beads.
 Her friend gave her 20 * 2 = 40 metallic beads.
@@ -6258,7 +6652,7 @@ To calculate the number of plants, we divide the length of the flower bed by the
 111 feet / 12 inches = 9.25 pairs of plants.
 To calculate the number of plants, we add 1 for the extra space between the plants.
 9.25 pairs of plants + 1 pair of plants = 10 pairs of plants.
-Pat already owns 17 flowers, so she needs to buy 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = ",[invalid],0.0,17,0.0,256,False
+Pat already owns 17 flowers, so she needs to buy 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = 10 pairs of plants - 17 flowers = ",[invalid],0.0,17,0.0,1024,True
 985,63,"Edgar eats 18 pretzels a day, so his brother eats 18/2 = 9 pretzels a day.
 In a week, there are 7 days, so his brother eats 9 x 7 = 63 pretzels in a week.
 #### 63
@@ -6273,7 +6667,7 @@ Each rose needs 1 pound, so they can plant 30/1 = 30 roses.
 They also plant 4 sunflowers, which need 3 pounds each, so they need 4*3 = 12 pounds of soil.
 They also plant 10 carnations, which need 1.5 pounds each, so they need 10*1.5 = 15 pounds of soil.
 In total, they need 30 + 12 + 15 = 57 pounds of soil.
-Since they only have 30 pounds of soil, they can only plant 30/57 = 2/1.8 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9",[invalid],0.0,0.9,0.0,256,False
+Since they only have 30 pounds of soil, they can only plant 30/57 = 2/1.8 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0.9 = 1/0",[invalid],0.0,0,0.0,1024,True
 988,6,"Jessica makes $2,000.00 a month, so she sets aside 25% of her paycheck, which is 25/100 * $2,000.00 = $500.00 for fancy shoes.
 Each pair of shoes costs $1,000.00, so Jessica can buy $500.00 / $1,000.00 = 0.5 pairs of shoes.
 In a year, there are 12 months, so Jessica can buy 0.5 pairs of shoes / 12 months * 12 months = 0.5 pairs of shoes per year.
@@ -6319,7 +6713,32 @@ Let's simplify and solve for x:
 x + (3/8 * (x + y)) = 44
 To isolate x, we subtract (3/8 * (x + y)) from both sides:
 x - (3/8 * (x + y)) = 44 - (3/8 * (x + y))
-To simplify further, we can multiply both sides",[invalid],0.0,8,0.0,256,False
+To simplify further, we can multiply both sides by 8 to eliminate the fraction:
+8x - 3(x + y) = 352
+Expanding and simplifying, we get:
+8x - 3x - 3y = 352
+5x - 3y = 352
+Now, we need to find the value of x, which represents the number of flights to France.
+We can use the fact that the other plane takes 44 flights to Poland, which is half the number of flights the first plane makes throughout each day.
+So, the first plane makes 44 * 2 = 88 flights to Poland.
+Since the first plane takes x flights to France and y flights to Germany, we can set up the equation:
+x + y = 88
+Now, we have two equations:
+5x - 3y = 352
+x + y = 88
+We can solve this system of equations by substitution or elimination.
+Let's use substitution. We can solve the second equation for y and substitute it into the first equation:
+y = 88 - x
+Substituting this into the first equation, we get:
+5x - 3(88 - x) = 352
+Expanding and simplifying, we get:
+5x - 264 + 3x = 352
+8x = 616
+Dividing both sides by 8, we find:
+x = 77
+Therefore, the first plane takes 77 flights to France in one day.
+#### 77
+The answer is: 77",[invalid],0.0,77,0.0,594,False
 994,2,"Tobias' howl lasts for 20 seconds.
 Chikote's howl lasts for twice as long as Tobias' howl, so Chikote's howl lasts for 20 x 2 = 40 seconds.
 Igneous' howl lasts for as long as the other two wolves combined, so Igneous' howl lasts for 20 + 40 = 60 seconds.
@@ -6444,7 +6863,10 @@ So, the total amount of water pumped into the tank on the first day is 4500 + 33
 On the second day, Wanda pumped 2/3 of the amount of water she pumped on the previous day, which is 2/3 * 4500 = 3000 gallons.
 Ms. B only pumped 1/3 of the number of gallons she pumped on the first day, which is 1/3 * 3375 = 1125 gallons.
 So, the total amount of water pumped into the tank on the second day is 3000 + 1125 = 4125 gallons.
-The total amount of water pumped into the tank is 7875 + 4125 = 1200",[invalid],0.0,1200,0.0,256,False
+The total amount of water pumped into the tank is 7875 + 4125 = 12000 gallons.
+Therefore, the remaining amount of water in the tank is 18000 - 12000 = 6000 gallons.
+#### 6000
+The answer is: 6000",[invalid],0.0,6000,1.0,307,False
 1012,94,"Let's assume the initial charge of the power bank is X.
 After 5 hours, the power bank has lost 9% of its capacity, so it has lost 0.09X.
 Therefore, the remaining charge is X - 0.09X = 0.91X.
@@ -6532,7 +6954,9 @@ $20x = $120
 To solve for x, we divide both sides of the equation by $20:
 $20x / $20 = $120 / $20
 x = 6
-Therefore, Teresa sold 2x = 2 * 6 = 12 small stuffed animals",[invalid],0.0,12,1.0,256,False
+Therefore, Teresa sold 2x = 2 * 6 = 12 small stuffed animals.
+#### 12
+The answer is: 12",[invalid],0.0,12,1.0,269,False
 1023,77,"The man eats 5 sandwiches per day, so in one week, he eats 5 x 7 = 35 sandwiches.
 His wife eats 4 sandwiches per day, so in one week, she eats 4 x 7 = 28 sandwiches.
 Their son eats 2 sandwiches per day, so in one week, he eats 2 x 7 = 14 sandwiches.
@@ -6844,7 +7268,23 @@ However, 4 people couldn't come, so the total number of people who could come is
 The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
 The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
 The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
-The fee to rent the theater is $125 for a party of 2",[invalid],0.0,2,0.0,256,False
+The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
+The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
+The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
+The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
+The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
+The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
+The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
+The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
+The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
+The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
+The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
+The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
+The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
+The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
+The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
+The fee to rent the theater is $125 for a party of 20, so the fee for 41 people is $125 * (41/20) = $261.50.
+The",[invalid],0.0,$261.50.,0.0,1024,True
 1072,85,"Maggie spent a quarter of her money, so she spent $60/4 = $15.
 Riza spent one-third of her money, so she spent $60/3 = $20.
 Together, they spent $15 + $20 = $35.
@@ -6944,7 +7384,9 @@ Half of them were Trekking bikes, so he sold 300/2 = 150 Trekking bikes.
 15% of the sold bikes were BMX bikes, so he sold 150 * 15% = 22.5 BMX bikes.
 The rest of the sold bikes were MTB type, so he sold 300 - 150 - 22.5 = 127.5 MTB bikes.
 The total amount of money Marcel earned from selling bicycles is the sum of the prices of the MTB, BMX, and Trekking bikes.
-So, he earned 127.5 * $500 + 22.5 * $250 + 150 * $450 = $63,750 + $5,625 + $67,500 = $136,87",[invalid],0.0,"$136,87",0.0,256,False
+So, he earned 127.5 * $500 + 22.5 * $250 + 150 * $450 = $63,750 + $5,625 + $67,500 = $136,875.
+#### 136875
+The answer is: 136875",[invalid],0.0,136875,0.0,278,False
 1087,12,"In 6 hours, the farmer makes 5 bales/hour x 6 hours = 30 bales of hay.
 In the same 6 hours, the truck picks up 3 bales/hour x 6 hours = 18 bales of hay.
 Therefore, the total number of bales of hay picked up is 18 bales - 30 bales = -12 bales.
@@ -6985,7 +7427,11 @@ A group of lazy Allosaurus gulped down the last 270 kilograms of meat, so they a
 Therefore, the weight of the meat on the triceratops before the T-Rex ate is 270 + X/4 = X/4 + 270.
 Since the Tyrannosaurus rex ate half of the small triceratops, we know that X/4 + 270 = X/2.
 Simplifying, we get X/4 + 270 = X/2.
-Multiplying both sides by 4, we get X + 1080 = 2X",[invalid],0.0,2,0.0,256,False
+Multiplying both sides by 4, we get X + 1080 = 2X.
+Subtracting X from both sides, we get 1080 = X.
+Therefore, the weight of the small triceratops before the T-Rex ate was 1080 kilograms.
+#### 1080
+The answer is: 1080",[invalid],0.0,1080,1.0,316,False
 1093,144,"The north and south walls are 10 x 8 feet, so they have an area of 10 x 8 = 80 square feet.
 The east and west walls are 5 x 8 feet, so they have an area of 5 x 8 = 40 square feet.
 The total area of the room is 80 + 40 = 120 square feet.
@@ -7045,7 +7491,9 @@ The new price of the frying pan is $20.00 - $4.00 = $16.00.
 She bought a set of towels that was 10% off $30.00, so the discount is 10/100 * $30.00 = $3.00.
 The new price of the towels is $30.00 - $3.00 = $27.00.
 The total amount she spent on the frying pan and towels is $16.00 + $27.00 = $43.00.
-After adding the new purchases to her balance, her new balance on her credit card is $70.00 + $43.00 = $1",[invalid],0.0,$1,0.0,256,False
+After adding the new purchases to her balance, her new balance on her credit card is $70.00 + $43.00 = $113.00.
+#### 113
+The answer is: 113",[invalid],0.0,113,1.0,276,False
 1103,90,"Let's assume the total number of jellyfish in the tank is x.
 A fifth of the jellyfish are large, so there are (1/5)x large jellyfish.
 A third of the large jellyfish change color, so there are (1/3)(1/5)x = (1/15)x jellyfish that change color.
@@ -7337,7 +7785,45 @@ Since he sells 60% of his inventory, he sells 0.6x rocks.
 The total amount of money he sells is $7(0.6x) = $4.2x.
 The total amount of money he loses is $100 - $4.2x.
 To find out how much money he loses, we need to know the value of x.
-Since he sells 60% of his inventory, he sells",[invalid],0.0,60,0.0,256,False
+Since he sells 60% of his inventory, he sells 0.6x rocks.
+The total amount of money he sells is $7(0.6x) = $4.2x.
+The total amount of money he loses is $100 - $4.2x.
+To find out how much money he loses, we need to know the value of x.
+Since he sells 60% of his inventory, he sells 0.6x rocks.
+The total amount of money he sells is $7(0.6x) = $4.2x.
+The total amount of money he loses is $100 - $4.2x.
+To find out how much money he loses, we need to know the value of x.
+Since he sells 60% of his inventory, he sells 0.6x rocks.
+The total amount of money he sells is $7(0.6x) = $4.2x.
+The total amount of money he loses is $100 - $4.2x.
+To find out how much money he loses, we need to know the value of x.
+Since he sells 60% of his inventory, he sells 0.6x rocks.
+The total amount of money he sells is $7(0.6x) = $4.2x.
+The total amount of money he loses is $100 - $4.2x.
+To find out how much money he loses, we need to know the value of x.
+Since he sells 60% of his inventory, he sells 0.6x rocks.
+The total amount of money he sells is $7(0.6x) = $4.2x.
+The total amount of money he loses is $100 - $4.2x.
+To find out how much money he loses, we need to know the value of x.
+Since he sells 60% of his inventory, he sells 0.6x rocks.
+The total amount of money he sells is $7(0.6x) = $4.2x.
+The total amount of money he loses is $100 - $4.2x.
+To find out how much money he loses, we need to know the value of x.
+Since he sells 60% of his inventory, he sells 0.6x rocks.
+The total amount of money he sells is $7(0.6x) = $4.2x.
+The total amount of money he loses is $100 - $4.2x.
+To find out how much money he loses, we need to know the value of x.
+Since he sells 60% of his inventory, he sells 0.6x rocks.
+The total amount of money he sells is $7(0.6x) = $4.2x.
+The total amount of money he loses is $100 - $4.2x.
+To find out how much money he loses, we need to know the value of x.
+Since he sells 60% of his inventory, he sells 0.6x rocks.
+The total amount of money he sells is $7(0.6x) = $4.2x.
+The total amount of money he loses is $100 - $4.2x.
+To find out how much money he loses, we need to know the value of x.
+Since he sells 60% of his inventory, he sells 0.6x rocks.
+The total amount of money he sells is $7(0.6x) = $4.2x.
+The total amount of money he loses is $100 - $4.2x",[invalid],0.0,$4.2,0.0,1024,True
 1147,22,"Lauren can draw 5 large-sized picture scenes per day, so it will take her 45/5 = 9 days to create all the large-sized picture scenes.
 She can draw 6 medium-sized picture scenes per day, so it will take her 36/6 = 6 days to create all the medium-sized picture scenes.
 She can draw 7 small-sized picture scenes per day, so it will take her 49/7 = 7 days to create all the small-sized picture scenes.
@@ -7485,7 +7971,34 @@ Simplifying, we have 12/5x = 12/5x.
 This equation is true for any value of x, so we can conclude that Rissa is left with 12/5x amount of money.
 Since Rissa is left with 4/5 of her money, we can set up the equation 12/5x = 4/5 * 3x.
 Simplifying, we have 12/5x = 12/5x.
-This equation is true for any value of x, so we can conclude that Rissa is left with 12",[invalid],0.0,12,0.0,256,False
+This equation is true for any value of x, so we can conclude that Rissa is left with 12/5x amount of money.
+Since Rissa is left with 4/5 of her money, we can set up the equation 12/5x = 4/5 * 3x.
+Simplifying, we have 12/5x = 12/5x.
+This equation is true for any value of x, so we can conclude that Rissa is left with 12/5x amount of money.
+Since Rissa is left with 4/5 of her money, we can set up the equation 12/5x = 4/5 * 3x.
+Simplifying, we have 12/5x = 12/5x.
+This equation is true for any value of x, so we can conclude that Rissa is left with 12/5x amount of money.
+Since Rissa is left with 4/5 of her money, we can set up the equation 12/5x = 4/5 * 3x.
+Simplifying, we have 12/5x = 12/5x.
+This equation is true for any value of x, so we can conclude that Rissa is left with 12/5x amount of money.
+Since Rissa is left with 4/5 of her money, we can set up the equation 12/5x = 4/5 * 3x.
+Simplifying, we have 12/5x = 12/5x.
+This equation is true for any value of x, so we can conclude that Rissa is left with 12/5x amount of money.
+Since Rissa is left with 4/5 of her money, we can set up the equation 12/5x = 4/5 * 3x.
+Simplifying, we have 12/5x = 12/5x.
+This equation is true for any value of x, so we can conclude that Rissa is left with 12/5x amount of money.
+Since Rissa is left with 4/5 of her money, we can set up the equation 12/5x = 4/5 * 3x.
+Simplifying, we have 12/5x = 12/5x.
+This equation is true for any value of x, so we can conclude that Rissa is left with 12/5x amount of money.
+Since Rissa is left with 4/5 of her money, we can set up the equation 12/5x = 4/5 * 3x.
+Simplifying, we have 12/5x = 12/5x.
+This equation is true for any value of x, so we can conclude that Rissa is left with 12/5x amount of money.
+Since Rissa is left with 4/5 of her money, we can set up the equation 12/5x = 4/5 * 3x.
+Simplifying, we have 12/5x = 12/5x.
+This equation is true for any value of x, so we can conclude that Rissa is left with 12/5x amount of money.
+Since Rissa is left with 4/5 of her money, we can set up the equation 12/5x = 4/5 * 3x.
+Simplifying, we have 12/5x = 12/5x.
+This equation is true for any value of x, so we can conclude that Rissa",[invalid],0.0,5,0.0,1024,True
 1170,2,"Since there are equal amounts of red, white, and purple paint, the total amount of paint used for these colors is 12/3 = 4 pints.
 Since half the mural is yellow, the amount of yellow paint used is 12/2 = 6 pints.
 Therefore, the amount of red paint used is 4 pints.
@@ -7571,7 +8084,12 @@ Colin will be a third as old as Wendy is now, so Colin's age will be (1/3)(5(x +
 We can set up the equation: x + 25 = (1/3)(5(x + 7))
 To solve for x, we multiply both sides of the equation by 3: 3(x + 25) = 5(x + 7)
 Expanding both sides of the equation, we get: 3x + 75 = 5x + 35
-Subtracting 3x from both sides of the equation, we get: 75 = 2x + 35",[invalid],0.0,35,0.0,256,False
+Subtracting 3x from both sides of the equation, we get: 75 = 2x + 35
+Subtracting 35 from both sides of the equation, we get: 40 = 2x
+Dividing both sides of the equation by 2, we get: x = 20
+Therefore, Colin is currently 20 years old.
+#### 20
+The answer is: 20",[invalid],0.0,20,1.0,324,False
 1182,1800,"Bob spends $27000 distributed between 3 schools, so each school spends $27000/3 = $9000.
 He can buy 100 books for $500, so he can buy 100/500 = 0.2 books per school.
 Therefore, Bob can buy 0.2 books per school.
@@ -8042,7 +8560,9 @@ To find out how much longer it will take for the coat of varnish on 6 paintings 
 Since it takes 12 minutes for one painting, the total drying time for 6 paintings is 12 minutes x 6 = 72 minutes.
 To find out how much longer it will take for the coat of varnish on 6 paintings with the new varnish to dry compared to the old varnish, we need to subtract the drying time for the old varnish from the drying time for the new varnish.
 Since it takes 7 minutes for the old varnish to dry on one painting, the total drying time for 6 paintings with the old varnish is 7 minutes x 6 = 42 minutes.
-Therefore, it will take 72 minutes - 42 minutes = 30 minutes longer for the coat of varnish on",[invalid],0.0,30,1.0,256,False
+Therefore, it will take 72 minutes - 42 minutes = 30 minutes longer for the coat of varnish on 6 paintings with the new varnish to dry compared to the old varnish.
+#### 30
+The answer is: 30",[invalid],0.0,30,1.0,285,False
 1255,12,"Crista has 20 plants in total.
 4 plants need half a cup of water, so they need 4 * 0.5 = 2 cups of water.
 8 plants need 1 cup of water, so they need 8 * 1 = 8 cups of water.
@@ -8309,7 +8829,10 @@ The total cost of the passion fruit and jackfruit is $21 + $28 = $49.
 It also takes 2 pounds of special honey, so the cost of the honey for 2 pounds is 2 * $10 = $20.
 The total cost of the passion fruit, jackfruit, and honey is $49 + $20 = $69.
 Tim sells each jar for $50, so the profit per jar is $50 - $69 = -$19.
-To find the profit for 10 jars, we multiply the profit per jar by 1",[invalid],0.0,1,0.0,256,False
+To find the profit for 10 jars, we multiply the profit per jar by 10: -$19 * 10 = -$190.
+Therefore, Tim makes a profit of -$190 selling 10 jars.
+#### 190
+The answer is: 190",[invalid],0.0,190,0.0,302,False
 1298,31,"The total amount of quarters is 32 * $0.25 = $8
 The total amount of dimes is 95 * $0.10 = $9.50
 The total amount of nickels is 120 * $0.05 = $6

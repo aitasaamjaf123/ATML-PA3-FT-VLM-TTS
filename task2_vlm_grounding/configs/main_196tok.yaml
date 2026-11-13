@@ -1,0 +1,101 @@
+# Task 2: SigLIP-Qwen3 VLM, 196 visual tokens (primary run).
+# The `smoke:` block is deep-merged over everything above when --smoke is passed.
+run_name: main_196tok
+seed: 6304
+
+paths:
+  raw_dir: data/raw
+  splits_dir: data/splits/task2
+  outputs_dir: task2_vlm_grounding/outputs
+  results_dir: task2_vlm_grounding/results
+  figures_dir: task2_vlm_grounding/figures
+
+models:
+  siglip: google/siglip-base-patch16-224
+  qwen: Qwen/Qwen3-0.6B
+  n_visual_tokens: 196
+  siglip_dim: 768
+  qwen_dim: 1024
+  connector_hidden: 1024
+  cache_batch_size: 64
+  cache_num_workers: 2
+
+data:
+  caption_train_images: 6000
+  caption_train_per_image: 3
+  caption_dev_images: 96
+  caption_dev_per_image: 1
+  grounding_pool_images: 6000        # train-image pool for presence/counting pairs (caption images first)
+  grounding_train_presence_pairs: 6000
+  grounding_train_counting_pairs: 6000
+  grounding_dev: {presence: 12, counting: 12}      # 24 pairs / 48 questions
+  grounding_test: {presence: 32, counting: 32}     # 64 pairs / 128 questions
+  vqa_train: {yesno: 640, number: 256, other: 640} # 1,536 pairs / 3,072 questions
+  vqa_dev: {yesno: 12, number: 8, other: 12}       # 32 pairs / 64 questions
+  vqa_test: {yesno: 36, number: 24, other: 36}     # 96 pairs / 192 questions
+  min_annotator_agreement: 8
+  caption_prompt: "Describe this image."
+  vqa_instruction: "Answer the question using a single word or phrase."
+  max_question_tokens: 80
+  max_caption_tokens: 64
+  max_answer_tokens: 16
+
+training:
+  microbatch: 8
+  grad_accum: 2
+  weight_decay: 0.01
+  grad_clip: 1.0
+  warmup_frac: 0.05
+  final_lr_frac: 0.10
+  checkpoint_every: 250
+  keep_last_checkpoints: 3
+  log_every: 10
+  lora: {r: 16, alpha: 32, dropout: 0.05, targets: [q_proj, k_proj, v_proj, o_proj]}
+  calibration: {n_caption: 192, n_each_other: 64}
+  stages:
+    stage1: {name: caption_alignment, updates: 2250, connector_lr: 1.0e-3, lora_lr: null, mix: {caption_pass: 1.0}}
+    stage2: {name: visual_instruction_tuning, updates: 1500, connector_lr: 1.0e-4, lora_lr: 2.0e-5,
+             mix: {presence: 0.50, counting: 0.25, caption: 0.25}}
+    stage3: {name: natural_vqa_specialization, updates: 750, connector_lr: 5.0e-5, lora_lr: 1.0e-5,
+             mix: {vqa: 0.70, presence: 0.10, counting: 0.10, caption: 0.10}}
+
+eval:
+  dev_every: 500
+  dev_extra_steps: [2250, 3750, 4500]   # stage endpoints (added automatically as well)
+  dev_generation: true                   # also log correct-image dev accuracy (no checkpoint selection on test)
+  batch_size: 8
+  max_new_tokens: 16
+  bootstrap_resamples: 4000
+  qualitative_per_category: 4
+
+smoke:
+  run_name: smoke_196tok
+  paths:
+    splits_dir: data/splits/task2_smoke
+  models:
+    cache_batch_size: 32
+  data:
+    caption_train_images: 32
+    caption_train_per_image: 1       # 32 train captions
+    caption_dev_images: 8
+    grounding_pool_images: 400
+    grounding_train_presence_pairs: 60
+    grounding_train_counting_pairs: 60
+    grounding_dev: {presence: 2, counting: 2}
+    grounding_test: {presence: 4, counting: 4}
+    vqa_train: {yesno: 3, number: 2, other: 3}   # 8 pairs
+    vqa_dev: {yesno: 3, number: 2, other: 3}
+    vqa_test: {yesno: 3, number: 2, other: 3}
+  training:
+    checkpoint_every: 5
+    log_every: 1
+    calibration: {n_caption: 16, n_each_other: 8}
+    stages:
+      stage1: {updates: 15}
+      stage2: {updates: 15}
+      stage3: {updates: 15}
+  eval:
+    dev_every: 5
+    dev_extra_steps: [15, 30, 45]
+    bootstrap_resamples: 500
+    qualitative_per_category: 2

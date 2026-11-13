@@ -1,4 +1,4 @@
 metric,filter,value,stderr
 sample_len,,1319.0,
 exact_match,strict-match,0.0,0.0
-exact_match,flexible-extract,0.6497346474601972,0.013140409455571265
+exact_match,flexible-extract,0.6520090978013646,0.013120581030382135

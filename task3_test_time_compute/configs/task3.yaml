@@ -1,0 +1,65 @@
+# Task 3 configuration. Paths are relative to the repository root unless absolute.
+seed: 6304
+budgets: [1, 2, 4, 8, 16, 32]
+n_rollouts: 32
+n_orders: 10
+n_bootstrap: 1000
+quartile_fraction: 0.25
+token_cap: 2048            # per-rollout cap used for the supplied generations
+
+paths:
+  data_root: /kaggle/input            # folder containing the ATML-PA3-Data export (searched recursively)
+  readme: null                        # null -> auto-discover README.MD under data_root
+  mathvista_metadata: data/raw/task3/mathvista_testmini_metadata.json
+  math_problems: data/raw/task3/math_problems.json   # {sample_id: problem}; only needed if generations lack a problem column
+  splits_dir: data/splits/task3
+  processed_dir: data/processed/task3
+  results_dir: task3_test_time_compute/results
+  figures_dir: task3_test_time_compute/figures
+
+datasets:
+  math:
+    pretty: "MATH / Qwen2.5-3B-Instruct"
+    vision: false
+    model_dir: null                   # null -> auto-discover (folder without attention_metrics.parquet)
+    columns: {}                       # optional overrides, e.g. {answer: extracted_answer, gold: gold_answer}
+  mathvista:
+    pretty: "MathVista testmini / Qwen2.5-VL-3B-Instruct"
+    vision: true
+    model_dir: null                   # null -> auto-discover (folder with attention_metrics.parquet)
+    columns: {}
+
+split:
+  n_dev: 200
+  n_live: 50
+
+answers:
+  math_verify_timeout: 5
+  allow_fallback_scorer: false        # true only for tests / environments without math-verify
+
+adaptive:
+  checkpoints: [4, 8, 16]
+  final_n: 32
+  taus: [0.5, 0.625, 0.75, 0.875, 1.0]
+  gammas: [0.0, 0.1, 0.25, 0.5]
+  tolerance: 0.01                     # dev accuracy may be at most 1 pp below fixed-32 self-consistency
+
+live:
+  model_id: Qwen/Qwen2.5-3B-Instruct
+  revision: null                      # null -> parsed from README.MD (40-char commit hash)
+  dtype: float16
+  system_prompt: "You are a helpful assistant."
+  instruction: "Think step by step inside <think></think> tags, then give your final answer inside \\boxed{}."
+  review_prompt: "Review the solution above. Identify and correct any errors; if it is correct, retain its answer. Give your final answer inside \\boxed{}."
+  sampling: {temperature: 0.7, top_p: 0.8, top_k: 20, repetition_penalty: 1.0}
+  single_max_new_tokens: 3072
+  parallel_k: 3
+  parallel_max_new_tokens: 1024
+  refine_max_new_tokens: 2048
+
+smoke:
+  n_dev: 20
+  n_eval: 40
+  n_orders: 3
+  n_bootstrap: 100
+  n_live: 4

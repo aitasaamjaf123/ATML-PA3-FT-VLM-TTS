@@ -38,7 +38,18 @@ The fifth glass costs 60% of the price, which is 0.6 * $1.08 = $0.648.
 The sixth glass costs 60% of the price, which is 0.6 * $0.648 = $0.3888.
 The seventh glass costs 60% of the price, which is 0.6 * $0.3888 = $0.2333.
 The eighth glass costs 60% of the price, which is 0.6 * $0.2333 = $0.13998.
-The ninth glass costs 60% of the price, which is 0.6 * $0.13998 =",[invalid],0.0,$0.13998,0.0,256,False
+The ninth glass costs 60% of the price, which is 0.6 * $0.13998 = $0.083988.
+The tenth glass costs 60% of the price, which is 0.6 * $0.083988 = $0.0503928.
+The eleventh glass costs 60% of the price, which is 0.6 * $0.0503928 = $0.03023568.
+The twelfth glass costs 60% of the price, which is 0.6 * $0.03023568 = $0.018141408.
+The thirteenth glass costs 60% of the price, which is 0.6 * $0.018141408 = $0.0108848448.
+The fourteenth glass costs 60% of the price, which is 0.6 * $0.0108848448 = $0.00653090688.
+The fifteenth glass costs 60% of the price, which is 0.6 * $0.00653090688 = $0.003918544128.
+The sixteenth glass costs 60% of the price, which is 0.6 * $0.003918544128 = $0.0023511264768.
+To find the total cost, we add up all the individual costs: $5 + $3 + $1.80 + $1.08 + $0.648 + $0.3888 + $0.2333 + $0.13998 + $0.083988 + $0.0503928 + $0.03023568 + $0.018141408 + $0.0108848448 + $0.00653090688 + $0.003918544128 + $0.0023511264768 = $1.0000000000000001.
+Therefore, Kylar needs to pay approximately $1.00 for the 16 glasses.
+#### 1
+The answer is: 1",[invalid],0.0,1,0.0,818,False
 6,260,"If Seattle has 20 sheep, then Charleston has 4 * 20 = 80 sheep.
 And Toulouse has twice as many sheep as Charleston, so Toulouse has 2 * 80 = 160 sheep.
 Together, Toulouse, Charleston, and Seattle have 20 + 80 + 160 = 260 sheep.
@@ -673,7 +684,9 @@ Combining the hours, we have 2 hours + 1.5 hours + 2 hours = 5.5 hours of TV.
 So, the remaining 7 hours - 5.5 hours = 1.5 hours of TV must be accounted for by the episodes on Wednesday.
 Since each episode is 30 minutes, we can divide the remaining 1.5 hours by 0.5 hours per episode to find the number of episodes.
 1.5 hours / 0.5 hours per episode = 3 episodes.
-",[invalid],0.0,3,1.0,256,False
+Therefore, Frankie watched 3 30-minute episodes on Wednesday.
+#### 3
+The answer is: 3",[invalid],0.0,3,1.0,280,False
 108,50,"Let's assume that Henry baked x cookies last year.
 He wants to make twice as many as he did last year, so he should have baked 2x cookies.
 But he actually baked 15 more cookies than he meant to, so he baked 2x + 15 cookies.
@@ -811,7 +824,9 @@ The hospital charges $200 per hour to the patients, so the total amount the hosp
 The hospital sees 500 people a day, and each patient is seen for an average of 24 minutes, so the total number of visits is 500 people x 24 minutes = 12,000 minutes.
 The total number of visits is 12,000 minutes / 60 minutes = 200 visits.
 The hospital charges $150 per visit to the doctors, so the total amount the hospital earns from the doctors is 200 visits x $150 per visit = $30,000.
-The hospital's profit is the difference between the amount earned from the patients and the amount",[invalid],0.0,"$30,000.",0.0,256,False
+The hospital's profit is the difference between the amount earned from the patients and the amount earned from the doctors, so the profit is $40,000 - $30,000 = $10,000.
+#### 10000
+The answer is: 10000",[invalid],0.0,10000,1.0,307,False
 130,30,"A third of the elves quit, so 60/3 = 20 elves quit.
 After 20 elves quit, there are 60 - 20 = 40 elves left.
 10 of the remaining elves quit, so 40 - 10 = 30 elves are left.
@@ -1430,7 +1445,7 @@ Chad decides to upgrade his meal for an extra $3.00, so the total cost of his me
 Chad has a gift card for $5.00 that he uses at checkout, so the total cost of his meal is $14.00 - $5.00 = $9.00.
 Chad still owes $9.00.
 #### 9
-The answer is",[invalid],0.0,9,1.0,256,False
+The answer is: 9",[invalid],0.0,9,1.0,259,False
 228,1,"Kalinda can normally add 4 pieces per minute, so in one hour, she can add 4 x 60 = 240 pieces.
 Her mom can typically place half as many pieces per minute as Kalinda, so she can place 4/2 = 2 pieces per minute.
 In one hour, her mom can place 2 x 60 = 120 pieces.
@@ -1859,7 +1874,12 @@ In the fourth round, every player gets an extra point if they have over 20 point
 Mike has 21 points, so he gets an extra point.
 Jim has 18 points, so he doesn't get an extra point.
 Tony has 42 points, so he gets an extra point.
-After the extra points",[invalid],0.0,42,0.0,256,False
+After the extra points had been distributed, Mike has 21 + 1 + 1 = 23 points.
+Jim has 18 + 0 + 0 = 18 points.
+Tony has 42 + 1 + 1 = 44 points.
+In total, all three players have 23 + 18 + 44 = 85 points.
+#### 85
+The answer is: 85",[invalid],0.0,85,0.0,347,False
 294,3,"The youngest son is half as old as the oldest son, so he is 8/2 = 4 years old.
 The total number of years the two sons have been together is 8 + 4 = 12 years.
 Since the oldest son is 8 years old, he washed 8 oranges.
@@ -2110,7 +2130,10 @@ For Job B, Nick will earn $42,000 per year.
 The state will charge $6,000 in property tax, so Nick will have to pay $42,000 - $6,000 = $36,000 in taxes.
 The state will also charge a 10% tax rate on net income after property tax, so Nick will have to pay $36,000 x 0.10 = $3,600 in taxes.
 Therefore, Nick will have a net pay of $42,000 - $3,600 = $38,400 per year.
-To find out how much more money Nick will make",[invalid],0.0,"$38,400",0.0,256,False
+To find out how much more money Nick will make at the job with a higher net pay rate, we subtract the net pay of Job A from the net pay of Job B: $38,400 - $24,000 = $14,400.
+Therefore, Nick will make $14,400 more at the job with a higher net pay rate compared to the other job.
+#### 14400
+The answer is: 14400",[invalid],0.0,14400,0.0,352,False
 332,44,"40 percent of the castles are ruins, so there are 40/100 * 220 = 88 ruined castles in Scotland.
 Half of the ruined castles are unmanned, so there are 88/2 = 44 unmanned ruined castles in Scotland.
 #### 44
@@ -2336,7 +2359,9 @@ Simplifying the expression, we have 50 - (17x - 10) = 50 - 17x + 10 = 60 - 17x.
 Since the number of customers kicked out for other reasons cannot be negative, we have 60 - 17x ≥ 0.
 Solving for x, we have x ≤ 3.529.
 Since the number of customers kicked out cannot be a fraction, we have x = 3.
-Therefore, the number of customers kicked out for other reasons is 60 - 17(3) = 60",[invalid],0.0,60,0.0,256,False
+Therefore, the number of customers kicked out for other reasons is 60 - 17(3) = 60 - 51 = 9.
+#### 9
+The answer is: 9",[invalid],0.0,9,0.0,274,False
 368,18,"If Sara scored 8 points, then Erin scored 3 * 8 = 24 points.
 After scoring 14 points, Erin now has 24 + 14 = 38 points.
 Therefore, Erin had 38 - 14 = 24 points before scoring 14.
@@ -2715,7 +2740,39 @@ He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
 He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
 He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
 He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
-He needs to sell enough cards to make $",[invalid],0.0,3.,0.0,256,False
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $50 - x/3 = $50 - x/3.
+He needs to sell enough cards to make $",[invalid],0.0,3.,0.0,1024,True
 428,26,"The caterer prepared enough hotdogs for half of the guests, which is 36/2 = 18 hotdogs.
 Each guest who wanted a second hotdog received one hotdog, so there were 40 guests who wanted a second hotdog.
 Therefore, the number of guests who did not get a second hotdog is 36 - 40 + 18 = 14.
@@ -2763,7 +2820,15 @@ Since he can't buy a fraction of a bag, he bought 3 bags of chips.
 Let's assume he bought x candy bars.
 Each candy bar costs $0.75, so the total cost of the candy bars is $0.75x.
 The total cost of the chips and candy bars is $1.25 + $0.75x.
-Since the total cost of the chips and candy bars is $1.25, we can set",[invalid],0.0,"$1.25,",0.0,256,False
+Since the total cost of the chips and candy bars is $1.25, we can set up the equation:
+$1.25 + $0.75x = $1.25
+Subtracting $1.25 from both sides of the equation, we get:
+$0.75x = 0
+Dividing both sides of the equation by $0.75, we get:
+x = 0
+Therefore, George bought 0 candy bars.
+#### 0
+The answer is: 0",[invalid],0.0,0,0.0,348,False
 435,5,"Ray had 25 lollipops and kept 5 lollipops, so he had 25 - 5 = 20 lollipops remaining.
 He shared the remaining lollipops equally with his four friends, so each friend received 20 / 4 = 5 lollipops.
 Therefore, each of Ray's friends received 5 lollipops.
@@ -3036,7 +3101,7 @@ $|A \cup B \cup C| = |A| + |B| - |A \cap B| + |A \cap C| - |B \cap C| + |A \cap 
 Substituting the given values, we get:
 $|A \cup B \cup C| = 9 + 6 - 3 + 3 - 3 + 3 = 15$
 Since there are 32 kids in the class, the number of kids who are not allergic to anything is $32 - |A \cup B \cup C| = 32 - 15 = \boxed{17}$.
-The answer is:",[invalid],0.0,$.,0.0,256,False
+The answer is: 17",[invalid],0.0,17,0.0,259,False
 478,621,"There are 3 groups of 200 employees, so the total number of employees is 3 * 200 = 600.
 Each group is assigned 7 tour guides, so the total number of tour guides is 3 * 7 = 21.
 Therefore, the total number of people going on this tour is 600 + 21 = 621.
@@ -3571,7 +3636,32 @@ Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
 Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
 Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
 Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
-Since one son is 12 and the other",[invalid],0.0,12,1.0,256,False
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20 years.
+Since one son is 12 and the other is 8, the total age is 12 + 8 = 20",[invalid],0.0,20,0.0,1024,True
 564,240,"In the first week, Judy read for 15 minutes each night, so she read a total of 15 minutes x 7 nights = 105 minutes in the first week.
 Since she can read 2 pages per 1.5 minutes, she read 105 minutes / 1.5 minutes = 70 pages in the first week.
 In the second week, she read a total of 100 pages.
@@ -3738,7 +3828,10 @@ B = 2250
 Now, we can find the number of red and green jelly beans:
 R = 0.99B = 0.99 * 2250 = 2227.5
 G = 1.01B = 1.01 * 2250 = 2272.5
-The difference between the number of green and red jelly beans is G - R = 2272.5 - 2227",[invalid],0.0,2227,0.0,256,False
+The difference between the number of green and red jelly beans is G - R = 2272.5 - 2227.5 = 45
+Therefore, the jar contains 45 more green jelly beans than red jelly beans.
+#### 45
+The answer is: 45",[invalid],0.0,45,0.0,292,False
 588,52,"The first measurement is 47 WPM.
 The second measurement is 52 WPM.
 The third measurement is 52 + 5 = 57 WPM.
@@ -3780,7 +3873,11 @@ We want to know when the beanstalk will be taller than Mark's window, which is 2
 So, we need to find the smallest number of days where the beanstalk is taller than 20 feet.
 After the first day, the beanstalk is 8 feet tall, which is taller than 20 feet.
 After the second day, the beanstalk is 16 feet tall, which is taller than 20 feet.
-After the third day, the beanstalk",[invalid],0.0,20,0.0,256,False
+After the third day, the beanstalk is 32 feet tall, which is taller than 20 feet.
+After the fourth day, the beanstalk is 64 feet tall, which is taller than 20 feet.
+So, the beanstalk will be taller than Mark's window after 4 days.
+#### 4
+The answer is: 4",[invalid],0.0,4,0.0,323,False
 594,42,"A cup of mushrooms weighs 100 grams and has 3 grams of protein.
 If John eats 200 grams of mushrooms every day, then he eats 200/100 = 2 cups of mushrooms per day.
 Since there are 7 days in a week, John eats 2 x 7 = 14 cups of mushrooms per week.
@@ -4383,7 +4480,9 @@ If Manolo wants to buy 10 lollipops and 10 candies, he will need to buy a total 
 The cost of 10 lollipops is 10 * $0.40 = $4.00.
 The cost of 10 candies is 10 * $3.20 = $32.00.
 The total cost of 20 items is $4.00 + $32.00 = $36.00.
-Therefore, Manolo",[invalid],0.0,$36.00.,0.0,256,False
+Therefore, Manolo will need to spend $36.00 on 10 lollipops and 10 candies.
+#### 36
+The answer is: 36",[invalid],0.0,36,0.0,292,False
 690,5760,"Rong saves 20 coins per month.
 Neil saves 2/5 times more coins per month than Rong, so he saves 20 * 2/5 = 8 more coins per month.
 Therefore, Neil saves 20 + 8 = 28 coins per month.
@@ -4465,7 +4564,10 @@ Therefore, there are 18 seats that need to be filled.
 Each seat has enough room to hold 6 people, so there are 18 seats x 6 people = 108 people that can be seated.
 Therefore, there are 108 people that need to be seated.
 Each person needs to buy enough drinks and snacks to fill the seats, so there are 108 people x 2 drinks = 216 drinks that need to be bought.
-Each person needs to buy enough snacks to fill the seats, so there are 108 people x 3 snacks = 3",[invalid],0.0,3,0.0,256,False
+Each person needs to buy enough snacks to fill the seats, so there are 108 people x 3 snacks = 324 snacks that need to be bought.
+Therefore, the group has spent a total of 216 drinks + 324 snacks = 540 dollars on snacks and drinks.
+#### 540
+The answer is: 540",[invalid],0.0,540,0.0,310,False
 702,2800,"Gissela's truck can haul 4,000 pounds of gravel.
 Gordy's truck can haul 800 pounds more than Gissela's truck, so Gordy's truck can haul 4,000 + 800 = 4,800 pounds of gravel.
 When Gary joins Gissela and Gordy, the three trucks combined can haul a total of 11,600 pounds of gravel.
@@ -4516,7 +4618,9 @@ Marcus ordered 3 mini quiches for $4.00 each, so the total cost of the mini quic
 Marcus ordered 13 blueberry muffins at $1.00 each, so the total cost of the blueberry muffins is 13 * $1.00 = $13.00
 The total cost of all the items is $15.00 + $10.00 + $12.00 + $13.00 = $50.00
 Marcus shows his loyalty card that gives him 10% off of his purchase, so the discount is 10% * $50.00 = $5.00
-The total bill after the discount",[invalid],0.0,$5.00,0.0,256,False
+The total bill after the discount is $50.00 - $5.00 = $45.00
+#### 45
+The answer is: 45",[invalid],0.0,45,1.0,289,False
 711,6,"If Erin buys 2 scoops of ice cream, she gets 1 scoop free, so she only needs to pay for 2 scoops.
 Each scoop costs $1.50, so Erin needs to pay for 2 * $1.50 = $3.00.
 If Erin has $6.00, she can buy 6 - $3.00 = $3.00 more.
@@ -4984,7 +5088,47 @@ After getting the fish, he had 2x white fish and y orange fish.
 He had 2x white fish and y orange fish.
 He had 3 orange fish and 4 white fish, so he had a total of 3 + 4 = 7 fish.
 After getting the fish, he had 2x white fish and y orange fish.
-He",[invalid],0.0,2,0.0,256,False
+He had 2x white fish and y orange fish.
+He had 3 orange fish and 4 white fish, so he had a total of 3 + 4 = 7 fish.
+After getting the fish, he had 2x white fish and y orange fish.
+He had 2x white fish and y orange fish.
+He had 3 orange fish and 4 white fish, so he had a total of 3 + 4 = 7 fish.
+After getting the fish, he had 2x white fish and y orange fish.
+He had 2x white fish and y orange fish.
+He had 3 orange fish and 4 white fish, so he had a total of 3 + 4 = 7 fish.
+After getting the fish, he had 2x white fish and y orange fish.
+He had 2x white fish and y orange fish.
+He had 3 orange fish and 4 white fish, so he had a total of 3 + 4 = 7 fish.
+After getting the fish, he had 2x white fish and y orange fish.
+He had 2x white fish and y orange fish.
+He had 3 orange fish and 4 white fish, so he had a total of 3 + 4 = 7 fish.
+After getting the fish, he had 2x white fish and y orange fish.
+He had 2x white fish and y orange fish.
+He had 3 orange fish and 4 white fish, so he had a total of 3 + 4 = 7 fish.
+After getting the fish, he had 2x white fish and y orange fish.
+He had 2x white fish and y orange fish.
+He had 3 orange fish and 4 white fish, so he had a total of 3 + 4 = 7 fish.
+After getting the fish, he had 2x white fish and y orange fish.
+He had 2x white fish and y orange fish.
+He had 3 orange fish and 4 white fish, so he had a total of 3 + 4 = 7 fish.
+After getting the fish, he had 2x white fish and y orange fish.
+He had 2x white fish and y orange fish.
+He had 3 orange fish and 4 white fish, so he had a total of 3 + 4 = 7 fish.
+After getting the fish, he had 2x white fish and y orange fish.
+He had 2x white fish and y orange fish.
+He had 3 orange fish and 4 white fish, so he had a total of 3 + 4 = 7 fish.
+After getting the fish, he had 2x white fish and y orange fish.
+He had 2x white fish and y orange fish.
+He had 3 orange fish and 4 white fish, so he had a total of 3 + 4 = 7 fish.
+After getting the fish, he had 2x white fish and y orange fish.
+He had 2x white fish and y orange fish.
+He had 3 orange fish and 4 white fish, so he had a total of 3 + 4 = 7 fish.
+After getting the fish, he had 2x white fish and y orange fish.
+He had 2x white fish and y orange fish.
+He had 3 orange fish and 4 white fish, so he had a total of 3 + 4 = 7 fish.
+After getting the fish, he had 2x white fish and y orange fish.
+He had 2x white fish and y orange fish.
+He had 3 orange fish and 4 white fish, so he had a",[invalid],0.0,4,1.0,1024,True
 784,15,"Andy's car fuel efficiency is 10 MPG, so he uses 1/10 of a gallon of gas per mile.
 The one-way distance between his home and office is 5 miles, so he uses 5/10 = 1/2 gallon of gas per week.
 The current price for regular gas is $3/gallon, so he spends 1/2 * $3 = $1.50 per week on gas.
@@ -5068,7 +5212,9 @@ In total, Billy earned $480 + $12 + $24 = $516.
 Sally started working at a different business with a starting salary of $0.50 more per hour than Billy's starting salary, so her starting salary is $10 + $0.50 = $10.50 per hour.
 If both Billy and Sally work 20 hours, Billy earned $516 x 20 = $10,320.
 Sally earned $10.50 x 20 = $210.
-Therefore, Billy earned $10,320 - $210 = $10,",[invalid],0.0,"$10,",0.0,256,False
+Therefore, Billy earned $10,320 - $210 = $10,110 more than Sally.
+#### 10110
+The answer is: 10110",[invalid],0.0,10110,0.0,281,False
 799,4,"3 loaves of bread cost 3 * $2 = $6
 2 bagels cost 2 * $1 = $2
 The difference in cost is $6 - $2 = $4
@@ -5295,7 +5441,11 @@ Angela has 6 mirrors, so the cost of installation for the mirrors is 6 * $129.00
 Angela has 2 chandeliers, so the cost of installation for the chandeliers is 2 * $129.00 = $258.00
 Angela has 20 pictures, so the cost of installation for the pictures is 20 * $129.00 = $2580.00
 The total cost of installation for the mirrors, chandeliers, and pictures is $774.00 + $258.00 + $2580.00 = $3612.00
-The cost of installation for additional items is $15.",[invalid],0.0,$15.,0.0,256,False
+The cost of installation for additional items is $15.00 per item, so the cost of installation for additional items is 6 + 2 + 20 = 28 items
+The cost of installation for additional items is 28 * $15.00 = $420.00
+The total cost of installation for all items is $3612.00 + $420.00 = $4032.00
+#### 4032
+The answer is: 4032",[invalid],0.0,4032,0.0,363,False
 832,42,"Anthony has saved $10.00 more than Eva, so Anthony has saved $10.00 + $20.00 = $30.00
 Roy has saved 40% more than Anthony, so Roy has saved $30.00 + ($30.00 * 40%) = $30.00 + $12.00 = $42.00
 Therefore, Roy has $42.00
@@ -5876,7 +6026,40 @@ Therefore, Colby needs to see at least 1 more tub of popcorn and 1 more box of c
 Colby already saw 5 movies on a Friday or Saturday, so he has already seen 5 movies.
 He also saw 8 movies on other days, so he has seen a total of 5 + 8 = 13 movies.
 He needs to see at least 1 more tub of popcorn and 1 more box of candy.
-Therefore, Col",[invalid],0.0,1,1.0,256,False
+Therefore, Colby needs to see at least 1 more tub of popcorn and 1 more box of candy.
+Colby already saw 5 movies on a Friday or Saturday, so he has already seen 5 movies.
+He also saw 8 movies on other days, so he has seen a total of 5 + 8 = 13 movies.
+He needs to see at least 1 more tub of popcorn and 1 more box of candy.
+Therefore, Colby needs to see at least 1 more tub of popcorn and 1 more box of candy.
+Colby already saw 5 movies on a Friday or Saturday, so he has already seen 5 movies.
+He also saw 8 movies on other days, so he has seen a total of 5 + 8 = 13 movies.
+He needs to see at least 1 more tub of popcorn and 1 more box of candy.
+Therefore, Colby needs to see at least 1 more tub of popcorn and 1 more box of candy.
+Colby already saw 5 movies on a Friday or Saturday, so he has already seen 5 movies.
+He also saw 8 movies on other days, so he has seen a total of 5 + 8 = 13 movies.
+He needs to see at least 1 more tub of popcorn and 1 more box of candy.
+Therefore, Colby needs to see at least 1 more tub of popcorn and 1 more box of candy.
+Colby already saw 5 movies on a Friday or Saturday, so he has already seen 5 movies.
+He also saw 8 movies on other days, so he has seen a total of 5 + 8 = 13 movies.
+He needs to see at least 1 more tub of popcorn and 1 more box of candy.
+Therefore, Colby needs to see at least 1 more tub of popcorn and 1 more box of candy.
+Colby already saw 5 movies on a Friday or Saturday, so he has already seen 5 movies.
+He also saw 8 movies on other days, so he has seen a total of 5 + 8 = 13 movies.
+He needs to see at least 1 more tub of popcorn and 1 more box of candy.
+Therefore, Colby needs to see at least 1 more tub of popcorn and 1 more box of candy.
+Colby already saw 5 movies on a Friday or Saturday, so he has already seen 5 movies.
+He also saw 8 movies on other days, so he has seen a total of 5 + 8 = 13 movies.
+He needs to see at least 1 more tub of popcorn and 1 more box of candy.
+Therefore, Colby needs to see at least 1 more tub of popcorn and 1 more box of candy.
+Colby already saw 5 movies on a Friday or Saturday, so he has already seen 5 movies.
+He also saw 8 movies on other days, so he has seen a total of 5 + 8 = 13 movies.
+He needs to see at least 1 more tub of popcorn and 1 more box of candy.
+Therefore, Colby needs to see at least 1 more tub of popcorn and 1 more box of candy.
+Colby already saw 5 movies on a Friday or Saturday, so he has already seen 5 movies.
+He also saw 8 movies on other days, so he has seen a total of 5 + 8 = 13 movies.
+He needs to see at least 1 more tub of popcorn and 1 more box of candy.
+Therefore, Colby needs to see at least 1 more tub of popcorn and 1 more box of candy.
+Colby already saw",[invalid],0.0,1,1.0,1024,True
 927,85000,"Andrew bakes 200 mini cinnamon rolls, and each roll has 600 calories, so the total calories for the cinnamon rolls is 200 * 600 = 120,000 calories.
 He also bakes 300 mini blueberry muffins, and each muffin has 450 calories, so the total calories for the blueberry muffins is 300 * 450 = 135,000 calories.
 If a mini pastry has 1/3rd of the calories of a normal version, then the calories for a mini pastry is 1/3 * 600 = 200 calories.
@@ -5913,7 +6096,7 @@ Therefore, John's age is 20 years old.
 Paul's age is x + 10 = 20 + 10 = 30 years old.
 Peter's age is 2x + 10 = 2(20) + 10 = 50 years old.
 #### 50
-The answer is: 5",[invalid],0.0,5,0.0,256,False
+The answer is: 50",[invalid],0.0,50,1.0,257,False
 932,24,"Maria gave each of her friends 2 water balloons, so she gave 4 friends x 2 balloons = 8 balloons.
 She had one water balloon for herself, so she had a total of 8 balloons + 1 balloon = 9 balloons.
 Her mom gave each person 3 more balloons, so she gave 4 friends x 3 balloons = 12 balloons.
@@ -6230,7 +6413,10 @@ When Emil turns 24, his brother's age will be B + 5.
 Since Emil is twice as old as his brother when he turns 24, we have B + 5 = 2 * 24.
 Simplifying, we get B + 5 = 48.
 Subtracting 5 from both sides, we get B = 43.
-So, Emil's brother",[invalid],0.0,43.,0.0,256,False
+So, Emil's brother's age when he turns 24 is 43.
+The sum of the ages of Emil's dad and his brother now is 43 + 43 = 86.
+#### 86
+The answer is: 86",[invalid],0.0,86,0.0,307,False
 980,90,"Adrianne's mother gave her 20 metallic beads.
 Her sister gave her 20 + 10 = 30 metallic beads.
 Her friend gave her 20 * 2 = 40 metallic beads.
@@ -6321,7 +6507,7 @@ The answer is: 52",[invalid],0.0,52,1.0,173,False
 993,11,"Let's assume the number of flights to France is F and the number of flights to Germany is G.
 The first plane goes to Greece for three-quarters of its flights, so it goes to Greece for 3/4 * (F + G) = 3/4 * (F + G) flights.
 The remaining flights are split equally between flights to France and flights to Germany, so it goes to France for F/2 flights and to Germany for G/2 flights.
-The total number of flights the first plane makes in one day is 3/4 * (F + G) + F/2 + G/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = ",[invalid],0.0,2,0.0,256,False
+The total number of flights the first plane makes in one day is 3/4 * (F + G) + F/2 + G/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F + G)/2 = 3/4 * (F + G) + (F",[invalid],0.0,4,0.0,1024,True
 994,2,"Tobias howls for 20 seconds.
 Chikote howls for twice as long as Tobias, so Chikote howls for 20 x 2 = 40 seconds.
 Igneous howls for as long as the other two wolves combined, so Igneous howls for 20 + 40 = 60 seconds.
@@ -6441,7 +6627,10 @@ So, on the first day, the total amount of water pumped into the tank is 4500 + 3
 On the second day, Wanda pumped 2/3 of the amount of water she pumped on the previous day, which is 2/3 * 4500 = 3000 gallons.
 Ms. B only pumped 1/3 of the number of gallons she pumped on the first day, which is 1/3 * 3375 = 1125 gallons.
 So, on the second day, the total amount of water pumped into the tank is 3000 + 1125 = 4125 gallons.
-Therefore, the total amount of water pumped into the tank is 7875 + 4125 = ",[invalid],0.0,4125,0.0,256,False
+Therefore, the total amount of water pumped into the tank is 7875 + 4125 = 12000 gallons.
+Since the tank has a capacity of 18000 gallons, there are 18000 - 12000 = 6000 gallons remaining for the tank to be full.
+#### 6000
+The answer is: 6000",[invalid],0.0,6000,1.0,324,False
 1012,94,"Let's assume the initial charge of the power bank is X.
 After 5 hours, the power bank has lost 9% of its initial charge, so it has 100% - 9% = 91% of its initial charge remaining.
 After 3 hours, the power bank has lost 7% of its initial charge, so it has 100% - 7% = 93% of its initial charge remaining.
@@ -6450,7 +6639,11 @@ We know that the charge remaining is 28%, so we can set up the equation 85.43% *
 Simplifying, we have 0.8543 * (X - 0.28) = X.
 Expanding, we have 0.8543X - 0.235 = X.
 Subtracting 0.8543X from both sides, we have -0.235 = 0.1457X.
-Dividing both sides by 0.1457",[invalid],0.0,0.1457,0.0,256,False
+Dividing both sides by 0.1457, we have X = -1.6.
+Since the charge cannot be negative, we can conclude that the initial charge of the power bank is 1.6 times the charge remaining.
+Therefore, the charge of the power bank when Maria went out to the park was 1.6 * 28% = 4.48%.
+#### 4.48
+The answer is: 4.48",[invalid],0.0,4.48,0.0,343,False
 1013,2,"Janet earns $10 an hour from wages and $15 an hour from tips, so her total earnings per hour is $10 + $15 = $25.
 She wants to save up 20% of the cost of a $10000 car, so she needs to save $10000 * 0.20 = $2000.
 If she works 40 hours a week, her weekly earnings from wages and tips is $25 * 40 = $1000.
@@ -6520,7 +6713,8 @@ The total amount of money earned from selling all the stuffed animals is $12L + 
 We know that the total amount of money earned is $120, so we can set up the equation $20L = $120.
 Dividing both sides of the equation by $20, we get L = 6.
 Therefore, Teresa sold 2L = 2 * 6 = 12 small stuffed animals.
-#### 12",[invalid],0.0,12,1.0,256,False
+#### 12
+The answer is: 12",[invalid],0.0,12,1.0,264,False
 1023,77,"The man eats 5 sandwiches per day, so in one week, he eats 5 x 7 = 35 sandwiches.
 His wife eats 4 sandwiches per day, so in one week, she eats 4 x 7 = 28 sandwiches.
 Their son eats 2 sandwiches per day, so in one week, he eats 2 x 7 = 14 sandwiches.
@@ -6695,7 +6889,7 @@ To find the new price of the car in 2010, we need to subtract the decrease from 
 The new price of the car in 2010 is $20000 - 6.3% of $20000 = $20000 - $1260 = $18740.
 Therefore, the price of the car in the year 2010 is $18740.
 #### 18740
-The answer is: 18",[invalid],0.0,18,0.0,256,False
+The answer is: 18740",[invalid],0.0,18740,0.0,259,False
 1049,20,"Half of the books are written in English, so there are 50/2 = 25 English books.
 10% of the books are written in German, so there are 50 * 10% = 5 German books.
 The remaining books are written in Spanish, so there are 50 - 25 - 5 = 20 Spanish books.
@@ -6985,7 +7179,12 @@ The group of lazy Allosaurus gulped down the last 270 kilograms of meat, so they
 Therefore, the weight of the triceratops before the Tyrannosaurus Rex ate was x/4 + 270 kilograms.
 Since the Tyrannosaurus Rex ate half of the triceratops, we know that x/4 + 270 = x/2.
 Simplifying, we get x/4 + 270 = x/2.
-Subtracting x/4 from both sides, we get 270 = x/2 - x",[invalid],0.0,2,0.0,256,False
+Subtracting x/4 from both sides, we get 270 = x/2 - x/4.
+Combining like terms, we get 270 = x/4.
+Multiplying both sides by 4, we get 1080 = x.
+Therefore, the weight of the small triceratops before the Tyrannosaurus Rex ate was 1080 kilograms.
+#### 1080
+The answer is: 1080",[invalid],0.0,1080,1.0,336,False
 1093,144,"The north and south walls are 10 x 8 feet, so they have an area of 10 x 8 = 80 square feet.
 The east and west walls are 5 x 8 feet, so they have an area of 5 x 8 = 40 square feet.
 The total area of the room is 80 + 40 = 120 square feet.
@@ -7049,7 +7248,8 @@ She also bought a set of towels that was 10% off $30.00, so the discount is $30.
 The new price of the towels is $30.00 - $3.00 = $27.00.
 The total amount she spent on these purchases is $16.00 + $27.00 = $43.00.
 After adding the new purchases to her balance, her new balance on her credit card is $70.00 + $43.00 = $113.00.
-",[invalid],0.0,$113.00.,0.0,256,False
+#### 113
+The answer is: 113",[invalid],0.0,113,1.0,270,False
 1103,90,"Let's assume the total number of jellyfish in the tank is x.
 A fifth of the jellyfish are large, so there are (1/5)x large jellyfish.
 A third of the large jellyfish change color, so there are (1/3)(1/5)x = (1/15)x jellyfish that change color.
@@ -7253,7 +7453,8 @@ To complete the entire 3-mile walk, Grandma needs to walk 3 miles on the beach a
 On the beach, it will take her 40 minutes to walk 2 miles, so it will take her 40 minutes x 3 miles / 2 miles = 60 minutes to walk the entire 3 miles on the beach.
 On the sidewalk, it will take her 60 minutes to walk 3 miles, so it will take her 60 minutes x 0.1 miles per minute / 0.1 miles per minute = 60 minutes to walk the entire 3 miles on the sidewalk.
 Therefore, it will take Grandma a total of 60 minutes + 60 minutes = 120 minutes to complete the entire 3-mile walk.
-####",[invalid],0.0,3,0.0,256,False
+#### 120
+The answer is: 120",[invalid],0.0,120,0.0,269,False
 1134,7,"Jane has saved $4 every week for 8 weeks, so she has saved a total of $4 x 8 = $32.
 If she continues to save the same amount each week, she will save $4 more every week.
 To find out how many more weeks it will take for her to save a total of $60, we need to divide the remaining amount by the amount she saves each week.
@@ -7491,7 +7692,30 @@ Therefore, she gave away 1/5 * 3x = 3/5x amount of money.
 Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
 Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
 Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
-Since Rissa gave away 3",[invalid],0.0,3,0.0,256,False
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means that she gave away 3/5x amount of money to her little sister.
+Since Rissa gave away 3/5x amount of money, this means",[invalid],0.0,5,0.0,1024,True
 1170,2,"Since there are equal amounts of red, white, and purple paint, the total amount of red, white, and purple paint is 12/3 = 4 pints.
 Since half of the mural is yellow, the amount of yellow paint is 12/2 = 6 pints.
 Therefore, the amount of red paint used is 4 pints.
@@ -7598,7 +7822,49 @@ He picked up one apple and put it in his pocket, so he had 0 apples left.
 He threw one apple into the tree, so he had 1 apple left.
 He picked up one apple and put it in his pocket, so he had 0 apples left.
 He threw one apple into the tree, so he had 1 apple left.
-He picked up one",[invalid],0.0,1,0.0,256,False
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had 0 apples left.
+He threw one apple into the tree, so he had 1 apple left.
+He picked up one apple and put it in his pocket, so he had ",[invalid],0.0,1,0.0,1024,True
 1184,306,"Ali ordered 850 kilos of coal, and each bag is 50 kilos, so he ordered 850/50 = 17 bags of coal.
 The cost of each bag of coal is $18, so the total cost of the order is 17 * $18 = $306.
 #### 306
@@ -7974,7 +8240,30 @@ She needs to answer 70% of the total questions on the second test, which is 40 *
 She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
 She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
 She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
-She needs to answer 70% of the total questions on the second test",[invalid],0.0,70,0.0,256,False
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs to answer 70% of the total questions on the second test, which is 40 * 0.70 = 28 questions.
+She needs",[invalid],0.0,28,0.0,1024,True
 1245,96,"Let's assume the number of strawberry cubes is x.
 According to the given information, the number of blueberry cubes is 5x - 4.
 The total number of ice cubes is x + (5x - 4) = 116.
@@ -8315,7 +8604,8 @@ The total cost of the passion fruit and jackfruit is $21 + $28 = $49.
 It also takes 2 pounds of special honey, so the cost of the honey for 2 pounds is 2 * $10 = $20.
 The total cost of the passion fruit, jackfruit, and honey is $49 + $20 = $69.
 Tim sells each jar for $50, so the profit from selling 10 jars is $50 * 10 - $69 = $410 - $69 = $341.
-####",[invalid],0.0,$341.,0.0,256,False
+#### 341
+The answer is: 341",[invalid],0.0,341,0.0,269,False
 1298,31,"The value of 32 quarters is 32 * $0.25 = $8.
 The value of 95 dimes is 95 * $0.10 = $9.50.
 The value of 120 nickels is 120 * $0.05 = $6.

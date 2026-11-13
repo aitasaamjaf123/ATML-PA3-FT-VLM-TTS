@@ -1,5 +1,5 @@
 condition,task,seconds,limit
-full_ft_mid,gsm8k_cot,511.29061579704285,
-full_ft_mid,hellaswag,492.52179622650146,
-full_ft_mid,boolq,96.68272519111633,
-full_ft_mid,arc_easy,60.50567030906677,
+full_ft_mid,gsm8k_cot,1807.428551197052,
+full_ft_mid,hellaswag,507.0013053417206,
+full_ft_mid,boolq,98.76177167892456,
+full_ft_mid,arc_easy,61.12742853164673,

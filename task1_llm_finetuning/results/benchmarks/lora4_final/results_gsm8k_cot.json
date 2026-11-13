@@ -4,6 +4,6 @@
  "sample_len": 1319,
  "exact_match,strict-match": 0.0,
  "exact_match_stderr,strict-match": 0.0,
- "exact_match,flexible-extract": 0.5905989385898408,
- "exact_match_stderr,flexible-extract": 0.013544504071244504
+ "exact_match,flexible-extract": 0.5966641394996209,
+ "exact_match_stderr,flexible-extract": 0.013512654781814695
 }
